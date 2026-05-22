@@ -19412,7 +19412,7 @@ const X = createLucideIcon("x", __iconNode);
 function Footer() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-gray-200 bg-gray-50 px-4 py-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm text-gray-600", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(FolderCode, { className: "w-4 h-4" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Desenvolvido por LegionLabs" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Desenvolvido por Digo" })
   ] }) }) }) });
 }
 
