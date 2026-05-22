@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/elyriasmp-site/",
+  base: "/lumensmp-site/",
   build: {
     minify: false,
     sourcemap: false,
