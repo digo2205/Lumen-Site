@@ -6,7 +6,7 @@ export function Footer() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <FolderCode className="w-4 h-4" />
-            <span>Desenvolvido por LegionLabs</span>
+            <span>Desenvolvido por Digo</span>
           </div>
         </div>
       </div>
