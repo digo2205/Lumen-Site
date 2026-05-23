@@ -22247,6 +22247,10 @@ function DiretrizesPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "6. Preservação" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "7. Dark-rp" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não faça dark-rp em nenhuma circustância, ou seja, roleplays que tratam de assuntos muito pesados." })
           ] })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
