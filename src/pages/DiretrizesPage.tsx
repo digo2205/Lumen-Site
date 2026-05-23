@@ -178,7 +178,13 @@ export function DiretrizesPage() {
                 <p className="text-gray-700">
                   Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo.
                 </p>
-              </div>                                                                                                                  
+              </div>   
+                <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">7. Dark-rp</h3>
+                <p className="text-gray-700">
+                  Não faça dark-rp em nenhuma circustância, ou seja, roleplays que tratam de assuntos muito pesados.
+                </p>
+              </div>                                                                                                                               
               </div>
                 <div className="space-y-4">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Diretrizes do Minecraft</h2>
