@@ -22833,7 +22833,7 @@ function CriacaoPersonagemPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserPen, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Dicas de Criação de Personagem" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Dicas de Criação de Personagem" }) })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Criar um personagem envolvente é essencial para uma boa experiência de roleplay. Siga este guia para desenvolver um personagem memorável e coerente com o universo de Lumen." }),
@@ -22842,12 +22842,26 @@ function CriacaoPersonagemPage() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600 mb-3", children: step.description }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gray-50 p-3 rounded-lg", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-sm font-medium text-gray-700 mb-2", children: "Perguntas para refletir:" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-gray-600 space-y-1", children: step.tips.map((tip, tipIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-500 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: tip })
-          ] }, tipIndex)) })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-gray-600 space-y-1", children: step.tips.map((tip, tipIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "li",
+            {
+              className: "flex items-start gap-2",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-500 mt-1", children: "•" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: tip })
+              ]
+            },
+            tipIndex
+          )) })
         ] })
       ] }) }) }, index)) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-red-50 border-red-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-red-800", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1", children: "Importante" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar. Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento." })
+        ] })
+      ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/definicoes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
