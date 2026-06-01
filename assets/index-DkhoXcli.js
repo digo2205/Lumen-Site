@@ -18957,7 +18957,7 @@ function useLinkClickHandler(to, _temp) {
 }
 
 function Header() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "border-b border-gray-200 bg-white px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between max-w-screen-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "border-b border-gray-800 bg-gray-950 px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between max-w-screen-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "img",
       {
@@ -18966,7 +18966,7 @@ function Header() {
         className: "w-8 h-8 rounded"
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-gray-900", children: "LumenSMP" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-gray-100", children: "LumenSMP" })
   ] }) }) });
 }
 
@@ -19087,31 +19087,11 @@ const createLucideIcon = (iconName, iconNode) => {
  */
 
 
-const __iconNode$i = [
+const __iconNode$h = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m4.9 4.9 14.2 14.2", key: "1m5liu" }]
 ];
-const Ban = createLucideIcon("ban", __iconNode$i);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$h = [
-  ["path", { d: "M10 2v8l3-3 3 3V2", key: "sqw3rj" }],
-  [
-    "path",
-    {
-      d: "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20",
-      key: "k3hazp"
-    }
-  ]
-];
-const BookMarked = createLucideIcon("book-marked", __iconNode$h);
+const Ban = createLucideIcon("ban", __iconNode$h);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19122,6 +19102,26 @@ const BookMarked = createLucideIcon("book-marked", __iconNode$h);
 
 
 const __iconNode$g = [
+  ["path", { d: "M10 2v8l3-3 3 3V2", key: "sqw3rj" }],
+  [
+    "path",
+    {
+      d: "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20",
+      key: "k3hazp"
+    }
+  ]
+];
+const BookMarked = createLucideIcon("book-marked", __iconNode$g);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$f = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   ["path", { d: "M16 12h2", key: "7q9ll5" }],
   ["path", { d: "M16 8h2", key: "msurwy" }],
@@ -19135,7 +19135,7 @@ const __iconNode$g = [
   ["path", { d: "M6 12h2", key: "32wvfc" }],
   ["path", { d: "M6 8h2", key: "30oboj" }]
 ];
-const BookOpenText = createLucideIcon("book-open-text", __iconNode$g);
+const BookOpenText = createLucideIcon("book-open-text", __iconNode$f);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19145,8 +19145,8 @@ const BookOpenText = createLucideIcon("book-open-text", __iconNode$g);
  */
 
 
-const __iconNode$f = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$f);
+const __iconNode$e = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$e);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19156,23 +19156,8 @@ const ChevronLeft = createLucideIcon("chevron-left", __iconNode$f);
  */
 
 
-const __iconNode$e = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$e);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$d = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
-  ["path", { d: "M12 17h.01", key: "p32p05" }]
-];
-const CircleHelp = createLucideIcon("circle-help", __iconNode$d);
+const __iconNode$d = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$d);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19183,11 +19168,11 @@ const CircleHelp = createLucideIcon("circle-help", __iconNode$d);
 
 
 const __iconNode$c = [
-  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
-  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
-  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
+  ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const ExternalLink = createLucideIcon("external-link", __iconNode$c);
+const CircleHelp = createLucideIcon("circle-help", __iconNode$c);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19198,13 +19183,11 @@ const ExternalLink = createLucideIcon("external-link", __iconNode$c);
 
 
 const __iconNode$b = [
-  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
-  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
-  ["path", { d: "M10 9H8", key: "b1mrlr" }],
-  ["path", { d: "M16 13H8", key: "t4e002" }],
-  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
+  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$b);
+const ExternalLink = createLucideIcon("external-link", __iconNode$b);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19215,17 +19198,13 @@ const FileText = createLucideIcon("file-text", __iconNode$b);
 
 
 const __iconNode$a = [
-  ["path", { d: "M10 10.5 8 13l2 2.5", key: "m4t9c1" }],
-  ["path", { d: "m14 10.5 2 2.5-2 2.5", key: "14w2eb" }],
-  [
-    "path",
-    {
-      d: "M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z",
-      key: "1u1bxd"
-    }
-  ]
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "M10 9H8", key: "b1mrlr" }],
+  ["path", { d: "M16 13H8", key: "t4e002" }],
+  ["path", { d: "M16 17H8", key: "z1uh3a" }]
 ];
-const FolderCode = createLucideIcon("folder-code", __iconNode$a);
+const FileText = createLucideIcon("file-text", __iconNode$a);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19236,12 +19215,17 @@ const FolderCode = createLucideIcon("folder-code", __iconNode$a);
 
 
 const __iconNode$9 = [
-  ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
-  ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
-  ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
-  ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
+  ["path", { d: "M10 10.5 8 13l2 2.5", key: "m4t9c1" }],
+  ["path", { d: "m14 10.5 2 2.5-2 2.5", key: "14w2eb" }],
+  [
+    "path",
+    {
+      d: "M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z",
+      key: "1u1bxd"
+    }
+  ]
 ];
-const Hash = createLucideIcon("hash", __iconNode$9);
+const FolderCode = createLucideIcon("folder-code", __iconNode$9);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19252,15 +19236,12 @@ const Hash = createLucideIcon("hash", __iconNode$9);
 
 
 const __iconNode$8 = [
-  [
-    "path",
-    {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
-      key: "c3ymky"
-    }
-  ]
+  ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
+  ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
+  ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
+  ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
 ];
-const Heart = createLucideIcon("heart", __iconNode$8);
+const Hash = createLucideIcon("hash", __iconNode$8);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19271,16 +19252,15 @@ const Heart = createLucideIcon("heart", __iconNode$8);
 
 
 const __iconNode$7 = [
-  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
   [
     "path",
     {
-      d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
-      key: "1d0kgt"
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
     }
   ]
 ];
-const House = createLucideIcon("house", __iconNode$7);
+const Heart = createLucideIcon("heart", __iconNode$7);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19291,11 +19271,16 @@ const House = createLucideIcon("house", __iconNode$7);
 
 
 const __iconNode$6 = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "M12 16v-4", key: "1dtifu" }],
-  ["path", { d: "M12 8h.01", key: "e9boi3" }]
+  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
+  [
+    "path",
+    {
+      d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+      key: "1d0kgt"
+    }
+  ]
 ];
-const Info = createLucideIcon("info", __iconNode$6);
+const House = createLucideIcon("house", __iconNode$6);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19306,12 +19291,11 @@ const Info = createLucideIcon("info", __iconNode$6);
 
 
 const __iconNode$5 = [
-  ["path", { d: "M11 18H3", key: "n3j2dh" }],
-  ["path", { d: "m15 18 2 2 4-4", key: "1szwhi" }],
-  ["path", { d: "M16 12H3", key: "1a2rj7" }],
-  ["path", { d: "M16 6H3", key: "1wxfjs" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 16v-4", key: "1dtifu" }],
+  ["path", { d: "M12 8h.01", key: "e9boi3" }]
 ];
-const ListCheck = createLucideIcon("list-check", __iconNode$5);
+const Info = createLucideIcon("info", __iconNode$5);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19322,6 +19306,22 @@ const ListCheck = createLucideIcon("list-check", __iconNode$5);
 
 
 const __iconNode$4 = [
+  ["path", { d: "M11 18H3", key: "n3j2dh" }],
+  ["path", { d: "m15 18 2 2 4-4", key: "1szwhi" }],
+  ["path", { d: "M16 12H3", key: "1a2rj7" }],
+  ["path", { d: "M16 6H3", key: "1wxfjs" }]
+];
+const ListCheck = createLucideIcon("list-check", __iconNode$4);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$3 = [
   ["path", { d: "M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4", key: "re6nr2" }],
   ["path", { d: "M2 6h4", key: "aawbzj" }],
   ["path", { d: "M2 10h4", key: "l0bgd4" }],
@@ -19335,28 +19335,7 @@ const __iconNode$4 = [
     }
   ]
 ];
-const NotebookPen = createLucideIcon("notebook-pen", __iconNode$4);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$3 = [
-  [
-    "path",
-    {
-      d: "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3",
-      key: "wmoenq"
-    }
-  ],
-  ["path", { d: "M12 9v4", key: "juzpu7" }],
-  ["path", { d: "M12 17h.01", key: "p32p05" }]
-];
-const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$3);
+const NotebookPen = createLucideIcon("notebook-pen", __iconNode$3);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19367,17 +19346,17 @@ const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$3);
 
 
 const __iconNode$2 = [
-  ["path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2", key: "15lzij" }],
   [
     "path",
     {
-      d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z",
-      key: "1817ys"
+      d: "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3",
+      key: "wmoenq"
     }
   ],
-  ["circle", { cx: "10", cy: "7", r: "4", key: "e45bow" }]
+  ["path", { d: "M12 9v4", key: "juzpu7" }],
+  ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const UserPen = createLucideIcon("user-pen", __iconNode$2);
+const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$2);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19388,12 +19367,17 @@ const UserPen = createLucideIcon("user-pen", __iconNode$2);
 
 
 const __iconNode$1 = [
-  ["circle", { cx: "10", cy: "8", r: "5", key: "o932ke" }],
-  ["path", { d: "M2 21a8 8 0 0 1 10.434-7.62", key: "1yezr2" }],
-  ["circle", { cx: "18", cy: "18", r: "3", key: "1xkwt0" }],
-  ["path", { d: "m22 22-1.9-1.9", key: "1e5ubv" }]
+  ["path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2", key: "15lzij" }],
+  [
+    "path",
+    {
+      d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z",
+      key: "1817ys"
+    }
+  ],
+  ["circle", { cx: "10", cy: "7", r: "4", key: "e45bow" }]
 ];
-const UserRoundSearch = createLucideIcon("user-round-search", __iconNode$1);
+const UserPen = createLucideIcon("user-pen", __iconNode$1);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19410,7 +19394,7 @@ const __iconNode = [
 const X = createLucideIcon("x", __iconNode);
 
 function Footer() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-gray-200 bg-gray-50 px-4 py-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm text-gray-600", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-gray-800 bg-gray-950 px-4 py-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm text-gray-400", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(FolderCode, { className: "w-4 h-4" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Desenvolvido por Digo" })
   ] }) }) }) });
@@ -19445,15 +19429,15 @@ function Sidebar({ mobile }) {
     "aside",
     {
       className: `
-        flex flex-col overflow-y-auto
-        ${mobile ? "w-60 h-full bg-transparent p-0" : "w-64 bg-gray-50 border border-gray-200 rounded-xl fixed top-20 left-8 h-[calc(80vh)] p-4 shadow-lg"}
+        flex flex-col overflow-y-auto border-border
+        ${mobile ? "w-60 h-full bg-card p-4" : "w-64 bg-card border rounded-xl fixed top-24 left-8 h-[calc(80vh)] p-4 shadow-lg"}
       `,
       children: /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "space-y-6", children: [
         menuItems.map((item, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           Link,
           {
             to: item.path,
-            className: `flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${location.pathname === item.path ? "text-blue-600 bg-blue-50" : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"}`,
+            className: `flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${location.pathname === item.path ? "text-foreground bg-accent" : "text-muted-foreground hover:text-foreground hover:bg-accent/50"}`,
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: "w-4 h-4" }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-medium", children: item.label })
@@ -19462,12 +19446,12 @@ function Sidebar({ mobile }) {
           index
         )),
         sections.map((section, sectionIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xs font-semibold text-gray-500 uppercase tracking-wider px-3", children: section.title }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xs font-semibold text-muted-foreground/70 uppercase tracking-wider px-3", children: section.title }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-1", children: section.items.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Link,
             {
               to: item.path,
-              className: `flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-colors ${location.pathname === item.path ? "text-blue-600 bg-blue-50" : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"}`,
+              className: `flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-colors ${location.pathname === item.path ? "text-foreground bg-accent" : "text-muted-foreground hover:text-foreground hover:bg-accent/50"}`,
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: "w-4 h-4" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm", children: item.label })
@@ -19483,7 +19467,7 @@ function Sidebar({ mobile }) {
 
 function Layout({ children }) {
   const [sidebarOpen, setSidebarOpen] = reactExports.useState(false);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex min-h-screen", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex min-h-screen bg-gray-950 text-gray-100", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex md:flex-col md:w-64", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Sidebar, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "div",
@@ -19493,15 +19477,15 @@ function Layout({ children }) {
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "div",
             {
-              className: "absolute inset-0 bg-black/50",
+              className: "absolute inset-0 bg-black/60",
               onClick: () => setSidebarOpen(false)
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-60 h-full flex flex-col bg-white left-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-60 h-full flex flex-col bg-gray-900 border-r border-gray-800 left-0", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "button",
               {
-                className: "w-full px-4 py-3 bg-gray-200 rounded-r-full shadow-sm hover:bg-gray-300 transition-colors z-50",
+                className: "w-full px-4 py-3 bg-gray-800 text-gray-200 rounded-r-full shadow-sm hover:bg-gray-700 transition-colors z-50",
                 onClick: () => setSidebarOpen(false),
                 children: "Fechar"
               }
@@ -19515,7 +19499,7 @@ function Layout({ children }) {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "button",
         {
-          className: "md:hidden mb-4 px-3 py-2 bg-gray-200 rounded-full shadow-sm hover:bg-gray-300 transition-colors",
+          className: "md:hidden mb-4 px-3 py-2 bg-gray-800 text-gray-200 rounded-full shadow-sm hover:bg-gray-700 transition-colors",
           onClick: () => setSidebarOpen(true),
           children: "Menu"
         }
@@ -22028,7 +22012,7 @@ const Card = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PUR
   {
     ref,
     className: cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      "rounded-lg border border-border bg-card text-card-foreground shadow-sm",
       className
     ),
     ...props
@@ -22042,7 +22026,7 @@ const CardTitle = reactExports.forwardRef(({ className, ...props }, ref) => /* @
   {
     ref,
     className: cn(
-      "text-2xl font-semibold leading-none tracking-tight",
+      "text-2xl font-semibold leading-none tracking-tight text-foreground",
       className
     ),
     ...props
@@ -22073,27 +22057,32 @@ CardFooter.displayName = "CardFooter";
 function WelcomePage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Heart, { className: "w-5 h-5 text-gray-500" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Bem-vindo(a) ao LumenSMP!" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Heart, { className: "w-5 h-5 text-muted-foreground fill-muted-foreground/10" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Bem-vindo(a) ao LumenSMP!" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-gray-700", children: "Seja bem-vindo(a) ao site oficial do LumenSMP!" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Esta documentação/site foi criada para a melhor visualização de informações, como lore, regras, etc." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-50 border-blue-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-blue-800", children: "Informações podem ser adicionadas ou alteradas a qualquer momento." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-foreground font-medium", children: "Seja bem-vindo(a) ao site oficial do LumenSMP!" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed", children: "Esta documentação/site foi criada para a melhor visualização de informações, como lore, regras, etc." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-500/10 border border-blue-500/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-blue-400", children: "Informações podem ser adicionadas ou alteradas a qualquer momento." })
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-blue-600", children: "LumenSMP é desenvolvido e administrado por Digo e David." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/lore", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground", children: [
+          "LumenSMP é desenvolvido e administrado por ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Digo" }),
+          " e ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "David" }),
+          "."
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/lore", className: "block", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "História" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "História" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pt-8 border-t border-gray-200" })
+      ] })
     ] })
   ] }) });
 }
@@ -22101,31 +22090,33 @@ function WelcomePage() {
 function HistoriaPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpenText, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "História" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpenText, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "História" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "prose max-w-none", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700 mb-4", children: 'Lumen é um vasto mundo mágico de proporções imensuráveis, cuja essência vital é regida por uma rede de energia invisível conhecida como "A Teia". Esta força onipresente atua como o sistema nervoso do planeta, conectando toda a vida e servindo como barreira mística entre o plano material e as entidades do Além, as almas. O equilíbrio deste mundo, outrora velado indiretamente por guardiões ancestrais da luz e do silêncio, foi severamente fragmentado após uma guerra secular e devastadora chamada "Cataclismo", que exauriu grande parte da magia e dos recursos do mundo. Em meio a esse cenário de caos global, um pequeno grupo de escolhidos, pessoas com fé nos guardiões e paz em seus corações, foram guiados de forma divina até uma ilha isolada no extremo norte, onde fundaram o pacífico Reino de Luanda. Este refúgio prosperou intacto por mais de dois séculos, até ser finalmente descoberto pelas nações de um mundo exterior consumido pelo ressentimento. Em um ataque movido por ódio e vingança, os invasores ergueram uma torre rúnica na ilha e realizaram um ritual necromântico profundo. O ato profano rompeu a Teia local e ancorou um espírito denso e hostil àquela terra, instaurando uma maldição de morte e decadência sobre o antigo paraíso. Perante a ruína iminente de seu povo, Apollo, o rei de Luanda, empenhou um último ato de desespero: utilizou seu dom singular para rasgar o tecido da realidade, abrindo fendas dimensionais que alcançaram um planeta distante chamado Terra. É exatamente a partir deste evento que uma jornada começa, pois os novos habitantes trazidos do outro mundo, são humanos comuns, inteiramente desprovidos de poderes mágicos e habituado à normalidade da vida contemporânea terrestre. Os Andarilhos foram sugados subitamente uma dessas fendas durante o sono ou ao se deparar com um clarão inexplicável que cobria suas visões.' }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-amber-50 border-amber-200 mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-amber-800", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-6 leading-relaxed text-justify", children: 'Lumen é um vasto mundo mágico de proporções imensuráveis, cuja essência vital é regida por uma rede de energia invisível conhecida como "A Teia". Esta força onipresente atua como o sistema nervoso do planeta, conectando toda a vida e servindo como barreira mística entre o plano material e as entidades do Além, as almas. O equilíbrio deste mundo, outrora velado indiretamente por guardiões ancestrais da luz e do silêncio, foi severamente fragmentado após uma guerra secular e devastadora chamada "Cataclismo", que exauriu grande parte da magia e dos recursos do mundo.' }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-6 leading-relaxed text-justify", children: "Em meio a esse cenário de caos global, um pequeno grupo de escolhidos, pessoas com fé nos guardiões e paz em seus corações, foram guiados de forma divina até uma ilha isolada no extremo norte, onde fundaram o pacífico Reino de Luanda. Este refúgio prosperou intacto por mais de dois séculos, até ser finalmente descoberto pelas nações de um mundo exterior consumido pelo ressentimento. Em um ataque movido por ódio e vingança, os invasores ergueram uma torre rúnica na ilha e realizaram um ritual necromântico profundo. O ato profano rompeu a Teia local e ancorou um espírito denso e hostil àquela terra, instaurando uma maldição de morte e decadência sobre o antigo paraíso." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-6 leading-relaxed text-justify", children: "Perante a ruína iminente de seu povo, Apollo, o rei de Luanda, empenhou um último ato de desespero: utilizou seu dom singular para rasgar o tecido da realidade, abrindo fendas dimensionais que alcançaram um planeta distante chamado Terra. É exatamente a partir deste evento que uma jornada começa, pois os novos habitantes trazidos do outro mundo, são humanos comuns, inteiramente desprovidos de poderes mágicos e habituado à normalidade da vida contemporânea terrestre. Os Andarilhos foram sugados subitamente uma dessas fendas durante o sono ou ao se deparar com um clarão inexplicável que cobria suas visões." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-amber-500/10 border border-amber-500/20 mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-amber-400", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Nota:" }),
           " A lore é bem maior do que isso, porém, para maior imersão, damos apenas esses detalhes para que você compreenda a base da lore, a maioria dos outros detalhes você irá descobrir jogando."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Bem-vindo" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Bem-vindo" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/diretrizes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/diretrizes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Diretrizes" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Diretrizes" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22135,178 +22126,178 @@ function HistoriaPage() {
 function DiretrizesPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ListCheck, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Diretrizes" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ListCheck, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Diretrizes" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "prose max-w-none", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Diretrizes do Servidor" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6", children: "Diretrizes do Servidor" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "1. Discriminação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Discriminação" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "2. Respeito" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Respeito" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "3. Assédio" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Assédio" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "4. Discussões" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Discussões" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "5. Ameaças" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Ameaças" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "6. Doxxing" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Doxxing" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "7. Spam" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Spam" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "8. Links" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "8. Links" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "9. Conteúdo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material pertubador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "9. Conteúdo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material perturbador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "10. Flood" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "10. Flood" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "11. Comportamentos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Seja comportado, não pratique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill)." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "11. Comportamentos" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Seja comportado, nãoifique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill)." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "12. Incentivo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: 'Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que "não seja legal".' })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "12. Incentivo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que "não seja legal".' })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "13. Assuntos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "13. Assuntos" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "14. Cheats" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "14. Cheats" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "15. Colaboração" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "15. Colaboração" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "16. Trapaças" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não tente procurar bugs ou falhas, mantenha o espírito da diversão." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "16. Trapaças" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não tente procurar bugs ou falhas, mantenha o espírito da diversão." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "17. Instruções" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Siga as intruções dada pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "17. Instruções" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Siga as instruções dadas pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "18. Ações Pertubadoras" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nestra diretriz." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-red-50 border-red-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-red-800", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1", children: "Importante" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "As diretrizes do servidor valem para o servidor do Discord e para o servidor do Minecraft." })
-            ] })
-          ] }) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-gray-900 mb-4 mt-8", children: "Diretrizes do Roleplay" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "1. Hard-RP" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Siga o roleplay o tempo todo, independente das circustâncias." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "2. Interpretação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "3. Metagaming" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: 'Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: "mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não" ou "estou numa chamada com um amigo, não posso falar informações do roleplay para ele"' })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "4. Random Death Match (RDM)" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não mate jogadores, ou semelhantes sem razão aparente na lore." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "5. Autonomia" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: 'Na vida real você não chama um "administrador" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord.' })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "6. Preservação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "7. Dark-rp" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não faça dark-rp em nenhuma circustância, ou seja, roleplays que tratam de assuntos muito pesados." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "18. Ações Perturbadoras" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nesta diretriz." })
           ] })
         ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-destructive/10 border-destructive/30 my-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-destructive mt-0.5 flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold text-foreground mb-1", children: "Importante" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "leading-relaxed", children: "As diretrizes do servidor valem para o servidor do Discord e para o servidor do Minecraft." })
+          ] })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6 mt-10", children: "Diretrizes do Roleplay" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-gray-900 mb-4 mt-8", children: "Diretrizes do Minecraft" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "1. Lag" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Qualquer coisa que cause lag ou crashs no servidor será destruido sem aviso prévio, sejam máquinas, rituais, entre outros." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Hard-RP" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Siga o roleplay o tempo todo, independente das circunstâncias." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "2. Construções" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não destrua construções que sejam pertencentes a lore ou a outros jogadores." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Interpretação" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "3. Roubo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não roube os jogadores, entidades ou mesmo as casas dos jogadores." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Metagaming" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: "mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não" ou "estou numa chamada com um amigo, não posso falar informações do roleplay para ele"' })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "4. Modelos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não utilize modelos ou skins sem autorização da administração do servidor." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Random Death Match (RDM)" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não mate jogadores, ou semelhantes sem razão aparente na lore." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "5. Waystones" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Autonomia" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Na vida real você não chama um "administrador" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord.' })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "6. Inatividade" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Preservação" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "7. Vida" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não ultrapasse sessenta corações de vida (três barras)." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Dark-rp" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados." })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6 mt-10", children: "Diretrizes do Minecraft" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Lag" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer coisa que cause lag ou crashs no servidor será destruído sem aviso prévio, sejam máquinas, rituais, entre outros." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: '8. "Abuso"' }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Construções" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não destrua construções que sejam pertencentes a lore ou a outros jogadores." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-blue-500 pl-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "9. Placas & Livros" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: "Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Roubo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não roube os jogadores, entidades ou mesmo as casas dos jogadores." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Modelos" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não utilize modelos ou skins sem autorização da administração do servidor." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Waystones" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Inatividade" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Vida" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não ultrapasse sessenta corações de vida (três barras)." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: '8. "Abuso"' }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "9. Placas & Livros" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí." })
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/lore", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/lore", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "História" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "História" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/faq", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/faq", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "FAQ" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "FAQ" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22334,36 +22325,36 @@ function FAQPage() {
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleHelp, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "FAQ - Perguntas Frequentes" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleHelp, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "FAQ - Perguntas Frequentes" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Nesta página, você encontra respostas para algumas dúvidas simples ou frequentes; considere verificá-la antes de abrir um ticket de atendimento ou perguntar para alguém. Esse página é atualizada periodicamente." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: faqs.map((faq, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CircleHelp, { className: "w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Nesta página, você encontra respostas para algumas dúvidas simples ou frequentes; considere verificá-la antes de abrir um ticket de atendimento ou perguntar para alguém. Esta página é atualizada periodicamente." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: faqs.map((faq, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6 border border-border bg-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CircleHelp, { className: "w-5 h-5 text-primary mt-0.5 flex-shrink-0" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: faq.question }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700", children: faq.answer })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: faq.question }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed", children: faq.answer })
         ] })
       ] }) }, index)) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-50 border-blue-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-800", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-500/10 border border-blue-500/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-400", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Não encontrou sua resposta?" }),
         " Abra um ticket de atendimento no nosso servidor do Discord!"
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/diretrizes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/diretrizes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Diretrizes" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Diretrizes" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/definicoes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/definicoes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Definições" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Definições" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22381,55 +22372,55 @@ function ItensBanidosPage() {
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Ban, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Itens Banidos" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Ban, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Itens Banidos" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-red-50 border-red-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-red-800", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1", children: "Atenção!" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "O uso, posse ou distribuição dos itens listados abaixo pode resultar em punições. Esta lista é atualizada regularmente conforme necessário." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-destructive/10 border border-destructive/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-destructive mt-0.5 flex-shrink-0" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-destructive-foreground", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1 text-destructive", children: "Atenção!" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "opacity-90", children: "O uso, posse ou distribuição dos itens listados abaixo pode resultar em punições. Esta lista é atualizada regularmente conforme necessário." })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Os itens banidos foram selecionados para manter o equilíbrio do servidor e preservar a experiência de roleplay. Alguns itens podem ser permitidos em situações específicas com autorização da administração." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: bannedItems.map((category, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-red-500" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Os itens banidos foram selecionados para manter o equilíbrio do servidor e preservar a experiência de roleplay. Alguns itens podem ser permitidos em situações específicas com autorização da administração." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: bannedItems.map((category, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
           category.category
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: category.items.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-red-50 rounded-md", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-red-500 flex-shrink-0" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-gray-700", children: item })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: category.items.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
         ] }, itemIndex)) })
       ] }, index)) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-4 bg-yellow-50 border-yellow-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-yellow-800 mb-2", children: "Exceções e Casos Especiais" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-yellow-700 space-y-1", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-4 bg-amber-500/10 border border-amber-500/20", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-amber-400 mb-2", children: "Exceções e Casos Especiais" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-amber-500/90 space-y-1", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Alguns itens podem ser permitidos para eventos especiais" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Administradores e pessoas permitidas podem usar itens restritos" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Sempre consulte a administração em caso de dúvida" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• A lista pode ser atualizada sem aviso prévio" })
         ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-50 border-blue-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-800", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-500/10 border border-blue-500/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-400", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Encontrou um item banido?" }),
         " Reporte imediatamente à administração. Não tente usar ou esconder o item, pois isso pode resultar em punições adicionais."
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/criacao-de-personagem", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/criacao-de-personagem", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Criação de Personagem" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Criação de Personagem" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/redes-sociais", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/redes-sociais", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Redes Sociais" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Redes Sociais" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22602,9 +22593,9 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        outline: "border border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: "text-foreground hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline"
       },
       size: {
@@ -22705,50 +22696,48 @@ function RedesSociaisPage() {
       name: "Discord",
       description: "Nossa comunidade, suporte, anúncios, em geral tudo que acontece no servidor é discutido e notificado lá.",
       link: "https://discord.gg/SNjDTsVApZ",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FaDiscord, { className: "text-indigo-600 w-7 h-7" }),
-      color: "bg-indigo-50 border-indigo-200 text-indigo-800"
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FaDiscord, { className: "text-indigo-400 w-7 h-7" })
     },
     {
       name: "TikTok",
       description: "Nosso TikTok oficial, onde postamos vídeos curtos sobre o servidor, desde eventos, até momentos engraçados e interessantes.",
       link: "https://www.tiktok.com/",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FaTiktok, { className: "text-black w-7 h-7" }),
-      color: "bg-indigo-50 border-indigo-200 text-indigo-800"
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FaTiktok, { className: "text-foreground w-7 h-7" })
     }
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Hash, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Redes Sociais" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Hash, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Redes Sociais" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid gap-4", children: socialNetworks.map((network, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6 hover:shadow-md transition-shadow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center", children: network.icon }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid gap-4", children: socialNetworks.map((network, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6 border border-border bg-card hover:shadow-md transition-shadow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start sm:items-center gap-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center p-2 bg-muted rounded-md min-w-[44px]", children: network.icon }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900", children: network.name }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-600", children: network.description })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: network.name }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-0.5", children: network.description })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, variant: "outline", size: "sm", className: "gap-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: network.link, target: "_blank", rel: "noopener noreferrer", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3 self-end sm:self-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, variant: "outline", size: "sm", className: "gap-2 border-border hover:bg-muted", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: network.link, target: "_blank", rel: "noopener noreferrer", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" }),
           "Visitar"
         ] }) }) })
       ] }) }, index)) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/itens-banidos", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/itens-banidos", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Itens Banidos" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Itens Banidos" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/inscricao/formularios", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/inscricao/formularios", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Formulários" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Formulários" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22781,7 +22770,6 @@ function CriacaoPersonagemPage() {
     {
       title: "Quais são as qualidades e defeitos do seu personagem?",
       description: "Qualidades e defeitos do seu personagem",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
         "Ele é bom no que? E ruim em que?",
         "O que nele pode ser visto como algo ruim?"
@@ -22790,7 +22778,6 @@ function CriacaoPersonagemPage() {
     {
       title: "Como é a personalidade do seu personagem?",
       description: "Descreva a personalidade de seu personagem",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
         "Introvertido ou extrovertido?",
         "Metódico ou espontâneo?",
@@ -22802,7 +22789,6 @@ function CriacaoPersonagemPage() {
     {
       title: "Quais são os gostos e desgostos do seu personagem?",
       description: "O que ele gosta, ou desgosta",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
         "Perfeição ou imperfeição?",
         "Caos ou tranquilidade?",
@@ -22814,7 +22800,6 @@ function CriacaoPersonagemPage() {
     {
       title: "Quais são os medos/fobias do seu personagem?",
       description: "Do que ele tem medo, ou fobia",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
         "Medo de algo maior?",
         "Medo de ser esquecido?",
@@ -22824,7 +22809,6 @@ function CriacaoPersonagemPage() {
     {
       title: "Qual é a história de seu personagem?",
       description: "Como era o mundo de onde veio",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
         "Ele sente que veio de outro mundo? (lembrando que nenhum personagem tem memórias exatas de seu mundo, talvez habilidades)",
         "Pelo o que ele passou durante sua vida?",
@@ -22835,22 +22819,22 @@ function CriacaoPersonagemPage() {
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserPen, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Dicas de Criação de Personagem" }) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserPen, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Dicas de Criação de Personagem" }) })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Criar um personagem envolvente é essencial para uma boa experiência de roleplay. Siga este guia para desenvolver um personagem memorável e coerente com o universo de Lumen." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Criar um personagem envolvente é essencial para uma boa experiência de roleplay. Siga este guia para desenvolver um personagem memorável e coerente com o universo de Lumen." }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: characterSteps.map((step, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-start gap-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: step.title }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600 mb-3", children: step.description }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gray-50 p-3 rounded-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-sm font-medium text-gray-700 mb-2", children: "Perguntas para refletir:" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-gray-600 space-y-1", children: step.tips.map((tip, tipIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-2", children: step.title }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-3", children: step.description }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-muted p-3 rounded-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-sm font-medium text-foreground mb-2", children: "Perguntas para refletir:" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-muted-foreground space-y-1", children: step.tips.map((tip, tipIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "li",
             {
               className: "flex items-start gap-2",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-500 mt-1", children: "•" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: tip })
               ]
             },
@@ -22858,27 +22842,27 @@ function CriacaoPersonagemPage() {
           )) })
         ] })
       ] }) }) }, index)) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-red-50 border-red-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-red-800", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1", children: "Importante" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar. Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento. Nenhum personagem tem memórias exatas de sua origem, apenas informações básicas, hobbies, gostos, desgostos, nome, etc." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-destructive/10 border-destructive/30", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-destructive mt-0.5 flex-shrink-0" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold text-foreground mb-1", children: "Importante" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "leading-relaxed", children: "Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar. Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento. Nenhum personagem tem memórias exatas de sua origem, apenas informações básicas, hobbies, gostos, desgostos, nome, etc." })
         ] })
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/definicoes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/definicoes", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Definições" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Definições" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/itens-banidos", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/itens-banidos", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Itens Banidos" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Itens Banidos" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
         ] }) }) })
       ] })
     ] })
@@ -22892,7 +22876,7 @@ function FormulariosPage() {
       description: "Formulário para tornar-se um jogador (habitante) no servidor",
       status: "Disponível",
       link: "https://forms.gle/tKXWh3gYeN7XQfB36",
-      statusColor: "bg-green-100 text-green-800",
+      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
       requirements: [
         "Formulário aprovado pelos administradores;",
         "14 anos ou mais."
@@ -22903,7 +22887,7 @@ function FormulariosPage() {
       description: "Formulário para tornar-se um staff no servidor",
       status: "Disponível",
       link: "https://forms.gle/1CghL7KTVyPJMTZ69",
-      statusColor: "bg-green-100 text-green-800",
+      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
       requirements: [
         "Formulário aprovado pelos administradores;",
         "15 anos ou mais."
@@ -22914,7 +22898,7 @@ function FormulariosPage() {
       description: "Formulário para tornar-se um filhote (ovo) no servidor",
       status: "Disponível",
       link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      statusColor: "bg-green-100 text-green-800",
+      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
       requirements: [
         "Formulário aprovado pelos administradores;",
         "15 anos ou mais."
@@ -22923,31 +22907,30 @@ function FormulariosPage() {
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(NotebookPen, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Formulários" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(NotebookPen, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Formulários" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Aqui você encontra os formulários de inscrição do Lumen." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-50 border-blue-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-800", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Aqui você encontra os formulários de inscrição do Lumen." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-blue-500/10 border border-blue-500/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-400", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Importante:" }),
-        " Todos os formulários são processados pela equipe de administração. O tempo de aprovação costuma ser menos, mas não passa de 15 dias."
+        " Todos os formulários são processados pela equipe de administração. O tempo de aprovação costuma ser menor, mas não passa de 15 dias."
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: forms.map((form, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: forms.map((form, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-4 gap-4", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-5 h-5 text-blue-600 mt-1 flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-5 h-5 text-primary mt-1 flex-shrink-0" }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-900", children: form.title }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600 text-sm mt-1", children: form.description })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: form.title }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm mt-1", children: form.description })
             ] })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `px-2 py-1 rounded-full text-xs font-medium ${form.statusColor}`, children: form.status })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `px-2.5 py-0.5 rounded-full text-xs font-medium border ${form.statusColor} flex-shrink-0`, children: form.status })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-sm font-medium text-gray-700 mb-2", children: "Requisitos:" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-gray-600 space-y-1", children: form.requirements.map((req, reqIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-500 mt-1", children: "•" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-sm font-medium text-foreground mb-2", children: "Requisitos:" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "text-sm text-muted-foreground space-y-1", children: form.requirements.map((req, reqIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary mt-0.5", children: "•" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: req })
           ] }, reqIndex)) })
         ] }),
@@ -22963,25 +22946,16 @@ function FormulariosPage() {
           }
         )
       ] }, index)) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-4 bg-yellow-50 border-yellow-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-yellow-800 mb-2", children: "📝 Dicas para Preenchimento" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-yellow-700 space-y-1", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Seja honesto e detalhado em suas respostas" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Revise antes de enviar para evitar erros" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "• Leia as dicas de criação de personagem" })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/redes-sociais", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/redes-sociais", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Redes Sociais" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Redes Sociais" })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 opacity-50", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500", children: "Última página" }) }) }) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pt-8 border-t border-gray-200" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card opacity-40 flex items-center justify-center h-full", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-medium", children: "Última página" }) }) })
+      ] })
     ] })
   ] }) });
 }
@@ -22989,37 +22963,49 @@ function FormulariosPage() {
 function DefinicoesPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookMarked, { className: "w-5 h-5 text-gray-600" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-gray-900", children: "Definições" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookMarked, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Definições" })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "prose max-w-none", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Aqui você encontrará algumas dicas de vocabulário para utilizar dentro de roleplay, como por exemplo, dor de cabeça = lag." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-gray-50 p-3 rounded-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-gray-600 space-y-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Aqui você encontrará algumas dicas de vocabulário para utilizar dentro de roleplay, como por exemplo, dor de cabeça = lag." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-muted p-4 rounded-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-muted-foreground space-y-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: 'Lag (por fps): "dor de cabeça".' })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Lag (por fps):" }),
+              ' "dor de cabeça".'
+            ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: 'Servidor lagando: "tempestade mágica".' })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Servidor lagando:" }),
+              ' "tempestade mágica".'
+            ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Chat do jogo: os balões de fala, considere como se a pessoa estivesse falando." })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Chat do jogo:" }),
+              " os balões de fala, considere como se a pessoa estivesse falando."
+            ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: 'Discord: evite falar sobre no roleplay, mas se for muito necessário, fale no chat: "// (sinal que indica off-rp) discord"' })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Discord:" }),
+              ' evite falar sobre no roleplay, mas se for muito necessário, fale no chat: "// (sinal que indica off-rp) discord"'
+            ] })
           ] })
         ] }) }) })
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/faq", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-gray-400" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/faq", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { className: "w-5 h-5 text-muted-foreground" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Anterior" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "FAQ" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Anterior" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "FAQ" })
           ] })
         ] }) }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -23027,12 +23013,12 @@ function DefinicoesPage() {
           {
             to: "/principal/criacao-de-personagem",
             className: "flex-1",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-500 mb-1", children: "Próximo" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-gray-900", children: "Criação de Personagem" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-1", children: "Próximo" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: "Criação de Personagem" })
               ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-gray-400" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-5 h-5 text-muted-foreground" })
             ] }) })
           }
         )
@@ -23046,21 +23032,21 @@ function DownloadModpackPage() {
     const fileUrl = "https://www.dropbox.com/";
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "elyria-modpack-1.0.zip";
+    link.download = "lumen-modpack-1.0.zip";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center justify-center h-screen text-center", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-semibold text-gray-900 mb-2", children: "Baixando a modpack..." }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-gray-600", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center justify-center h-[calc(100vh-200px)] text-center", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-semibold text-foreground mb-2", children: "Baixando a modpack..." }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-muted-foreground", children: [
       "Se o download não começar automaticamente,",
       " ",
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
           href: "https://www.dropbox.com/",
-          className: "text-blue-600 underline",
+          className: "text-primary hover:underline font-medium",
           children: "clique aqui"
         }
       ),
@@ -23070,7 +23056,7 @@ function DownloadModpackPage() {
 }
 
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-white flex flex-col", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background flex flex-col text-foreground", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Header, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(WelcomePage, {}) }),
