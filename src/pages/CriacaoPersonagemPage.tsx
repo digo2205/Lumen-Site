@@ -92,7 +92,6 @@ export function CriacaoPersonagemPage() {
       description: "Como era o mundo de onde veio",
       icon: <UserRoundSearch className="w-5 h-5 text-blue-600" />,
       tips: [
-        "Como era seu mundo original? Medieval? Fantasioso?",
         "Ele sente que veio de outro mundo? (lembrando que nenhum personagem tem memórias exatas de seu mundo, talvez habilidades)",
         "Pelo o que ele passou durante sua vida?",
         "Quais desafios ele já enfrentou?",
@@ -203,6 +202,7 @@ export function CriacaoPersonagemPage() {
                 <p>
                   Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar.
                   Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento.
+                  Nenhum personagem tem memórias exatas de sua origem, apenas informações básicas, hobbies, gostos, desgostos, nome, etc.
                 </p>
 
               </div>

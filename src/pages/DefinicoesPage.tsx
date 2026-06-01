@@ -60,13 +60,6 @@ export function DefinicoesPage() {
                           Chat do jogo: os balões de fala, considere como se a pessoa estivesse falando.
                         </span>
                       </li>
-                        <li className="flex items-start gap-2">
-                        <span className="text-gray-400 mt-1">•</span>
-
-                        <span>
-                          Tell/whisper: não cite no roleplay.
-                        </span>
-                      </li>     
                       <li className="flex items-start gap-2">
                         <span className="text-gray-400 mt-1">•</span>
 
