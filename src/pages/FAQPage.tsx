@@ -13,6 +13,10 @@ export function FAQPage() {
       answer: "Todas essas informações estão disponíveis num canal em nosso servidor do Discord disponível apenas para os aprovados."
     },
     {
+      question: "Quantas vidas um jogador e/ou uma criança tem?",
+      answer: "Os jogadores e as crianças tem três vidas. Porém, as crianças perdem uma vida em qualquer morte, os jogadores só perdem vida em mortes durante eventos."
+    },    
+    {
       question: "O SMP já começou?",
       answer: "Não, começará entre junho e julho de 2026."
     },
