@@ -42,10 +42,10 @@ export function Sidebar({ mobile }: { mobile?: boolean }) {
   return (
     <aside
       className={`
-        flex flex-col overflow-y-auto
+        flex flex-col overflow-y-auto border-border
         ${mobile 
-          ? 'w-60 h-full bg-transparent p-0' 
-          : 'w-64 bg-gray-50 border border-gray-200 rounded-xl fixed top-20 left-8 h-[calc(80vh)] p-4 shadow-lg'}
+          ? 'w-60 h-full bg-card p-4' 
+          : 'w-64 bg-card border rounded-xl fixed top-24 left-8 h-[calc(80vh)] p-4 shadow-lg'}
       `}
     >
       <nav className="space-y-6">
@@ -55,8 +55,8 @@ export function Sidebar({ mobile }: { mobile?: boolean }) {
             to={item.path}
             className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
               location.pathname === item.path
-                ? 'text-blue-600 bg-blue-50'
-                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                ? 'text-foreground bg-accent'
+                : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
             }`}
           >
             <item.icon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export function Sidebar({ mobile }: { mobile?: boolean }) {
 
         {sections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="space-y-2">
-            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3">
+            <h3 className="text-xs font-semibold text-muted-foreground/70 uppercase tracking-wider px-3">
               {section.title}
             </h3>
             <div className="space-y-1">
@@ -76,8 +76,8 @@ export function Sidebar({ mobile }: { mobile?: boolean }) {
                   to={item.path}
                   className={`flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-colors ${
                     location.pathname === item.path
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                      ? 'text-foreground bg-accent'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
                   }`}
                 >
                   <item.icon className="w-4 h-4" />

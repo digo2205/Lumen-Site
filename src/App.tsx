@@ -16,7 +16,7 @@ import { DownloadModpackPage } from './pages/DownloadPage';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen bg-background flex flex-col text-foreground">
         <Header />
         <Layout>
           <Routes>
