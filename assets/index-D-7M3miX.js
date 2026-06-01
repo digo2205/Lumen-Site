@@ -22822,7 +22822,6 @@ function CriacaoPersonagemPage() {
       description: "Como era o mundo de onde veio",
       icon: /* @__PURE__ */ jsxRuntimeExports.jsx(UserRoundSearch, { className: "w-5 h-5 text-blue-600" }),
       tips: [
-        "Como era seu mundo original? Medieval? Fantasioso?",
         "Ele sente que veio de outro mundo? (lembrando que nenhum personagem tem memórias exatas de seu mundo, talvez habilidades)",
         "Pelo o que ele passou durante sua vida?",
         "Quais desafios ele já enfrentou?",
@@ -22859,7 +22858,7 @@ function CriacaoPersonagemPage() {
         /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-red-800", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold mb-1", children: "Importante" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar. Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento." })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar. Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento. Nenhum personagem tem memórias exatas de sua origem, apenas informações básicas, hobbies, gostos, desgostos, nome, etc." })
         ] })
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4", children: [
@@ -23004,10 +23003,6 @@ function DefinicoesPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Chat do jogo: os balões de fala, considere como se a pessoa estivesse falando." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Tell/whisper: não cite no roleplay." })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gray-400 mt-1", children: "•" }),
