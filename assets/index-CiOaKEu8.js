@@ -22896,9 +22896,9 @@ function FormulariosPage() {
     {
       title: "Formulário de Inscrição de Filhote",
       description: "Formulário para tornar-se um filhote (ovo) no servidor",
-      status: "Disponível",
+      status: "Indisponíve",
       link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+      statusColor: "bg-destructive/10 text-destructive border-destructive/20",
       requirements: [
         "Formulário aprovado pelos administradores;",
         "15 anos ou mais."
