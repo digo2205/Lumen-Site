@@ -7,7 +7,7 @@ export function FormulariosPage() {
   const forms = [
     {
       title: "Formulário de Inscrição de Jogador",
-      description: "Formulário para tornar-se um jogador (habitante) no servidor",
+      description: "Formulário para tornar-se um jogador (andarilho) no servidor",
       status: "Disponível",
       link: "https://forms.gle/tKXWh3gYeN7XQfB36",
       statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
