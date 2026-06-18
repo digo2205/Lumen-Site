@@ -156,7 +156,7 @@ export function CriacaoPersonagemPage() {
                   Lembre-se, a história de seu personagem deve sempre terminar com ele acordando num lugar, como um salão grande, e o que antecede isso, ele apenas dormir e acordar já nesse ambiente, ou ele ver uma luz muito forte e acordar nesse lugar.
                   Não cite reações nem sentimentos dele nesse novo ambiente, apenas diga que o personagem acordou nesse lugar, reações e/ou sentimentos do personagem devem ser interpretados dentro do roleplay nesse momento.
                   Nenhum personagem tem memórias exatas de sua origem, apenas informações básicas, hobbies, gostos, desgostos, nome, etc.
-                  O personagem pode vir de outras realidades, de outros universos, ter outras raças (deve ser citado na história dele) e etc, desde que não seja nada que de poder absurdo ao personagem, como por exemplo, uma raça 'semi-deus'.
+                  O personagem dever vir de outras realidades (ou a própria Terra também), de outros universos, ter outras raças (deve ser citado na história dele) e etc; desde que não seja nada que de poder absurdo ao personagem, como por exemplo, uma raça 'semi-deus'.
                 </p>
               </div>
             </div>
