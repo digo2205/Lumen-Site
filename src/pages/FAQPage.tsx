@@ -9,7 +9,7 @@ export function FAQPage() {
       answer: "Sim, é possível jogar utilizando o SKLauncher. Devido a um dos mods em nossa modpack, é impossível jogar utilizando o TLauncher."
     },
     {
-      question: "Onde eu instalo a modpack, qual é a versão, qual o endereço do servidor?",
+      question: "Onde eu instalo a modpack, qual o endereço do servidor?",
       answer: "Todas essas informações estão disponíveis num canal em nosso servidor do Discord disponível apenas para os aprovados."
     },
     {
@@ -18,8 +18,12 @@ export function FAQPage() {
     },    
     {
       question: "O SMP já começou?",
-      answer: "Não, começará entre junho e julho de 2026."
+      answer: "Não, começará provavelmente dia 03 de julho de 2026."
     },
+    {
+      question: "Qual é a versão da modpack? Qual o modloader? Quantos mods tem?",
+      answer: "Há uma média de 270 mods na versão NeoForge 1.21.1."
+    },    
   ]
 
   return (
