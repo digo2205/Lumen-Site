@@ -22,7 +22,7 @@ export function FAQPage() {
     },
     {
       question: "Qual é a versão da modpack? Qual o modloader? Quantos mods tem?",
-      answer: "Há uma média de 270 mods na versão NeoForge 1.21.1"
+      answer: "Há uma média de 270 mods na versão NeoForge 1.21.1."
     },    
   ]
 
