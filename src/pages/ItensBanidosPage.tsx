@@ -44,7 +44,8 @@ export function ItensBanidosPage() {
   const bannedAttitudes = [
     "Invisiblidade em eventos",
     "Charm of Shrinking em eventos",
-    "Qualquer vinho a partir do nível um"
+    "Qualquer vinho a partir do nível um",
+    "Entrar em qualquer dimensão sem permissão", 
   ]
 
   const bannedEnchantments = [
