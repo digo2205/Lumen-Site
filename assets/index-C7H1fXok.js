@@ -22409,7 +22409,8 @@ function ItensBanidosPage() {
   ];
   const bannedAttitudes = [
     "Invisiblidade em eventos",
-    "Charm of Shrinking em eventos"
+    "Charm of Shrinking em eventos",
+    "Qualquer vinho a partir do nível um"
   ];
   const bannedEnchantments = [
     "Disarming"
