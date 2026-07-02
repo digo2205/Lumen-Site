@@ -58,6 +58,14 @@ export function ItensBanidosPage() {
     }
   ]
 
+  const bannedThings = [
+    "Indefinido 1",
+    "Indefinido 2",
+    "Indefinido 3",
+    "Indefinido 4",
+    "Indefinido 5",
+  ]
+
   return (
     <div className="max-w-screen-2xl py-8 px-8">
       <div className="max-w-3xl mx-auto space-y-6">
@@ -113,6 +121,22 @@ export function ItensBanidosPage() {
               </Card>
             ))}
           </div>
+
+          {/* Tabela Coisas Banidas */}
+          <Card className="p-6 border border-border bg-card">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <X className="w-5 h-5 text-destructive" />
+              Coisas Banidas
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {bannedThings.map((item, itemIndex) => (
+                <div key={itemIndex} className="flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10">
+                  <X className="w-4 h-4 text-destructive flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
 
           {/* Exceções Amarelo */}
           <Card className="p-4 bg-amber-500/10 border border-amber-500/20">
