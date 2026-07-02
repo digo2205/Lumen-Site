@@ -8,19 +8,13 @@ export function ItensBanidosPage() {
       category: "Itens Banidos",
       items: [
         "Magia - Abyssal Blast",
-        "Advanced Chunk Loader",
         "Aegis Wine",
-        "Basic Chunk Loader",
         "Black Sun Sword",
-        "Blazegold Ingot",
-        "Celestigem",
-        "Charm of Shrinking",
         "Coin Minting Machine",
         "Cross Necklace",
         "Crystal Heart",
         "Dimensional Carver",
         "Draconic Twinsword",
-        "Eclipse Alloy Ingot",
         "Eiswein",
         "Encantamento - Disarming",
         "Enderic Railgun",
@@ -35,35 +29,36 @@ export function ItensBanidosPage() {
         "Magenta",
         "Meat Shredder",
         "Mellohi Wine",
+        "Apple Wine",
         "Mortuth",
         "Netherfused Gem - Radiance",
         "Runefused Gem - Immolation",
         "Shattered Dimensional Carver",
-        "Time Crystal",
         "Transmutation Table",
-        "Ultimate Chunk Loader",
-        "Upgrade: Blank",
-        "Upgrade: Death Protection",
-        "Upgrade: Debuff Remover",
-        "Upgrade: Earthquake",
-        "Upgrade: Mental Obliteration",
-        "Upgrade: Mind Fog",
-        "Upgrade: Phase",
-        "Upgrade: Stupefy",
-        "Upgrade: Time Protection",
         "Erdrick's Sword",
         "Transmuting Elixir",
-        "Invisiblidade em eventos",
       ]
     }
   ]
 
-  const bannedThings = [
-    "Indefinido 1",
-    "Indefinido 2",
-    "Indefinido 3",
-    "Indefinido 4",
-    "Indefinido 5",
+  const bannedAttitudes = [
+    "Invisiblidade em eventos",
+    "Charm of Shrinking em eventos",
+  ]
+
+  const bannedEnchantments = [
+    "Encantamento - Disarming",
+  ]
+
+  const bannedSpells = [
+    "Magia - Abyssal Blast",
+    "Magia - Invisibility",
+  ]
+
+  const bannedMods = [
+    "Just Dire Things",
+    "Simply Swords (ferramentas únicas)",
+    "Chunk Loader",
   ]
 
   return (
@@ -122,14 +117,62 @@ export function ItensBanidosPage() {
             ))}
           </div>
 
-          {/* Tabela Coisas Banidas */}
+          {/* Tabela Atitudes Banidas */}
           <Card className="p-6 border border-border bg-card">
             <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <X className="w-5 h-5 text-destructive" />
-              Coisas Banidas
+              Atitudes Banidas
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {bannedThings.map((item, itemIndex) => (
+              {bannedAttitudes.map((item, itemIndex) => (
+                <div key={itemIndex} className="flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10">
+                  <X className="w-4 h-4 text-destructive flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          {/* Tabela Encantamentos Banidos */}
+          <Card className="p-6 border border-border bg-card">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <X className="w-5 h-5 text-destructive" />
+              Encantamentos Banidos
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {bannedEnchantments.map((item, itemIndex) => (
+                <div key={itemIndex} className="flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10">
+                  <X className="w-4 h-4 text-destructive flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          {/* Tabela Magias Banidas */}
+          <Card className="p-6 border border-border bg-card">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <X className="w-5 h-5 text-destructive" />
+              Magias Banidas
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {bannedSpells.map((item, itemIndex) => (
+                <div key={itemIndex} className="flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10">
+                  <X className="w-4 h-4 text-destructive flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          {/* Tabela Mods Banidos */}
+          <Card className="p-6 border border-border bg-card">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <X className="w-5 h-5 text-destructive" />
+              Mods Banidos
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {bannedMods.map((item, itemIndex) => (
                 <div key={itemIndex} className="flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10">
                   <X className="w-4 h-4 text-destructive flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">{item}</span>
