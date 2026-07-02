@@ -22424,6 +22424,13 @@ function ItensBanidosPage() {
       ]
     }
   ];
+  const bannedThings = [
+    "Indefinido 1",
+    "Indefinido 2",
+    "Indefinido 3",
+    "Indefinido 4",
+    "Indefinido 5"
+  ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Ban, { className: "w-5 h-5 text-muted-foreground" }) }),
@@ -22448,6 +22455,16 @@ function ItensBanidosPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
         ] }, itemIndex)) })
       ] }, index)) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
+          "Coisas Banidas"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedThings.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
+        ] }, itemIndex)) })
+      ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-4 bg-amber-500/10 border border-amber-500/20", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-amber-400 mb-2", children: "Exceções e Casos Especiais" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "text-sm text-amber-500/90 space-y-1", children: [
