@@ -22242,6 +22242,10 @@ function DiretrizesPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Dark-rp" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "8. Itens de Lore" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copia=los, mas sempre devolver aonde encontrou." })
           ] })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6 mt-10", children: "Diretrizes do Minecraft" }),
@@ -23031,14 +23035,21 @@ function DefinicoesPage() {
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Servidor lagando:" }),
-              ' "tempestade mágica".'
+              ' "tempestade".'
             ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Chat do jogo:" }),
-              " os balões de fala, considere como se a pessoa estivesse falando."
+              " considere como se a pessoa estivesse falando."
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "JEI/Missões:" }),
+              " trate como o item Manual."
             ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
