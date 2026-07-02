@@ -45,14 +45,21 @@ export function DefinicoesPage() {
                     <li className="flex items-start gap-2">
                       <span className="text-muted-foreground/60 mt-1">•</span>
                       <span>
-                        <strong className="text-foreground font-medium">Servidor lagando:</strong> "tempestade mágica".
+                        <strong className="text-foreground font-medium">Servidor lagando:</strong> "tempestade".
                       </span>
                     </li>
 
                     <li className="flex items-start gap-2">
                       <span className="text-muted-foreground/60 mt-1">•</span>
                       <span>
-                        <strong className="text-foreground font-medium">Chat do jogo:</strong> os balões de fala, considere como se a pessoa estivesse falando.
+                        <strong className="text-foreground font-medium">Chat do jogo:</strong> considere como se a pessoa estivesse falando.
+                      </span>
+                    </li>
+
+                    <li className="flex items-start gap-2">
+                      <span className="text-muted-foreground/60 mt-1">•</span>
+                      <span>
+                        <strong className="text-foreground font-medium">JEI/Missões:</strong> trate como o item Manual.
                       </span>
                     </li>
                     

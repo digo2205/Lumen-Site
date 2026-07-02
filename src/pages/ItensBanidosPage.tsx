@@ -53,7 +53,7 @@ export function ItensBanidosPage() {
         "Upgrade: Time Protection",
         "Erdrick's Sword",
         "Transmuting Elixir",
-        "Invisiblidade em eventos"
+        "Invisiblidade em eventos",
       ]
     }
   ]

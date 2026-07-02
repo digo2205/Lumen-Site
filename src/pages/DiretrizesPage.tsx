@@ -211,8 +211,18 @@ export function DiretrizesPage() {
                 <p className="text-muted-foreground">
                   Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados.
                 </p>
-              </div>                                                                                                                                              
+              </div>       
+
+              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
+                <h3 className="text-lg font-semibold text-foreground mb-1">8. Itens de Lore</h3>
+                <p className="text-muted-foreground">
+                  Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copia=los, mas sempre devolver aonde encontrou.
+                </p>
+              </div>                 
+                                                                                                                                                     
             </div>
+
+            
 
             <h2 className="text-2xl font-bold text-foreground mb-6 mt-10">Diretrizes do Minecraft</h2>
             <div className="space-y-4">
