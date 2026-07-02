@@ -47,17 +47,17 @@ export function ItensBanidosPage() {
   ]
 
   const bannedEnchantments = [
-    "Encantamento - Disarming",
+    "Disarming",
   ]
 
   const bannedSpells = [
-    "Magia - Abyssal Blast",
-    "Magia - Invisibility",
+    "Abyssal Blast",
+    "Invisibility",
   ]
 
   const bannedMods = [
     "Just Dire Things",
-    "Simply Swords (ferramentas únicas)",
+    "Simply Swords (só ferramentas únicas)",
     "Chunk Loader",
   ]
 
