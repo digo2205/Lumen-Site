@@ -22412,15 +22412,15 @@ function ItensBanidosPage() {
     "Charm of Shrinking em eventos"
   ];
   const bannedEnchantments = [
-    "Encantamento - Disarming"
+    "Disarming"
   ];
   const bannedSpells = [
-    "Magia - Abyssal Blast",
-    "Magia - Invisibility"
+    "Abyssal Blast",
+    "Invisibility"
   ];
   const bannedMods = [
     "Just Dire Things",
-    "Simply Swords (ferramentas únicas)",
+    "Simply Swords (só ferramentas únicas)",
     "Chunk Loader"
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
