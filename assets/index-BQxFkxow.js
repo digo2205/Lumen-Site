@@ -22375,19 +22375,13 @@ function ItensBanidosPage() {
       category: "Itens Banidos",
       items: [
         "Magia - Abyssal Blast",
-        "Advanced Chunk Loader",
         "Aegis Wine",
-        "Basic Chunk Loader",
         "Black Sun Sword",
-        "Blazegold Ingot",
-        "Celestigem",
-        "Charm of Shrinking",
         "Coin Minting Machine",
         "Cross Necklace",
         "Crystal Heart",
         "Dimensional Carver",
         "Draconic Twinsword",
-        "Eclipse Alloy Ingot",
         "Eiswein",
         "Encantamento - Disarming",
         "Enderic Railgun",
@@ -22402,34 +22396,32 @@ function ItensBanidosPage() {
         "Magenta",
         "Meat Shredder",
         "Mellohi Wine",
+        "Apple Wine",
         "Mortuth",
         "Netherfused Gem - Radiance",
         "Runefused Gem - Immolation",
         "Shattered Dimensional Carver",
-        "Time Crystal",
         "Transmutation Table",
-        "Ultimate Chunk Loader",
-        "Upgrade: Blank",
-        "Upgrade: Death Protection",
-        "Upgrade: Debuff Remover",
-        "Upgrade: Earthquake",
-        "Upgrade: Mental Obliteration",
-        "Upgrade: Mind Fog",
-        "Upgrade: Phase",
-        "Upgrade: Stupefy",
-        "Upgrade: Time Protection",
         "Erdrick's Sword",
-        "Transmuting Elixir",
-        "Invisiblidade em eventos"
+        "Transmuting Elixir"
       ]
     }
   ];
-  const bannedThings = [
-    "Indefinido 1",
-    "Indefinido 2",
-    "Indefinido 3",
-    "Indefinido 4",
-    "Indefinido 5"
+  const bannedAttitudes = [
+    "Invisiblidade em eventos",
+    "Charm of Shrinking em eventos"
+  ];
+  const bannedEnchantments = [
+    "Encantamento - Disarming"
+  ];
+  const bannedSpells = [
+    "Magia - Abyssal Blast",
+    "Magia - Invisibility"
+  ];
+  const bannedMods = [
+    "Just Dire Things",
+    "Simply Swords (ferramentas únicas)",
+    "Chunk Loader"
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
@@ -22458,9 +22450,39 @@ function ItensBanidosPage() {
       /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
-          "Coisas Banidas"
+          "Atitudes Banidas"
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedThings.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedAttitudes.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
+        ] }, itemIndex)) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
+          "Encantamentos Banidos"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedEnchantments.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
+        ] }, itemIndex)) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
+          "Magias Banidas"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedSpells.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
+        ] }, itemIndex)) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-xl font-semibold text-foreground mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5 text-destructive" }),
+          "Mods Banidos"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-3", children: bannedMods.map((item, itemIndex) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 p-2 bg-destructive/10 rounded-md border border-destructive/10", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-destructive flex-shrink-0" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: item })
         ] }, itemIndex)) })
