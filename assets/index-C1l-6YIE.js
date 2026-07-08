@@ -22403,7 +22403,12 @@ function ItensBanidosPage() {
         "Shattered Dimensional Carver",
         "Transmutation Table",
         "Erdrick's Sword",
-        "Transmuting Elixir"
+        "Transmuting Elixir",
+        "Oakskin Elixir",
+        "Greater Oakskin Elixir",
+        "Master Sword - em lore e pvp",
+        "Gram",
+        "Sigmun"
       ]
     }
   ];
@@ -22411,14 +22416,15 @@ function ItensBanidosPage() {
     "Invisiblidade em eventos",
     "Charm of Shrinking em eventos",
     "Qualquer vinho a partir do nível um",
-    "Entrar em qualquer dimensão sem permissão"
+    "Entrar em qualquer dimensão sem permissão",
+    "Criar ou duplicar moedas do Lightman's Currency",
+    "Teleportar por waystones utilizando barcos"
   ];
   const bannedEnchantments = [
     "Disarming"
   ];
   const bannedSpells = [
-    "Abyssal Blast",
-    "Invisibility"
+    "Abyssal Blast"
   ];
   const bannedMods = [
     "Just Dire Things",
@@ -23075,13 +23081,6 @@ function DefinicoesPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Servidor lagando:" }),
-              ' "tempestade".'
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Chat do jogo:" }),
               " considere como se a pessoa estivesse falando."
             ] })
@@ -23091,6 +23090,13 @@ function DefinicoesPage() {
             /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "JEI/Missões:" }),
               " trate como o item Manual."
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/60 mt-1", children: "•" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground font-medium", children: "Item/atitude banida:" }),
+              ' use o termo "pecado"'
             ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
