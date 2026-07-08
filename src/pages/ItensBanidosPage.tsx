@@ -37,6 +37,11 @@ export function ItensBanidosPage() {
         "Transmutation Table",
         "Erdrick's Sword",
         "Transmuting Elixir",
+        "Oakskin Elixir",
+        "Greater Oakskin Elixir",
+        "Master Sword - em lore e pvp",
+        "Gram",
+        "Sigmun",
       ]
     }
   ]
@@ -46,6 +51,8 @@ export function ItensBanidosPage() {
     "Charm of Shrinking em eventos",
     "Qualquer vinho a partir do nível um",
     "Entrar em qualquer dimensão sem permissão", 
+    "Criar ou duplicar moedas do Lightman's Currency",
+    "Teleportar por waystones utilizando barcos",
   ]
 
   const bannedEnchantments = [
@@ -54,7 +61,6 @@ export function ItensBanidosPage() {
 
   const bannedSpells = [
     "Abyssal Blast",
-    "Invisibility",
   ]
 
   const bannedMods = [

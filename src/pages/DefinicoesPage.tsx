@@ -45,13 +45,6 @@ export function DefinicoesPage() {
                     <li className="flex items-start gap-2">
                       <span className="text-muted-foreground/60 mt-1">•</span>
                       <span>
-                        <strong className="text-foreground font-medium">Servidor lagando:</strong> "tempestade".
-                      </span>
-                    </li>
-
-                    <li className="flex items-start gap-2">
-                      <span className="text-muted-foreground/60 mt-1">•</span>
-                      <span>
                         <strong className="text-foreground font-medium">Chat do jogo:</strong> considere como se a pessoa estivesse falando.
                       </span>
                     </li>
@@ -63,6 +56,13 @@ export function DefinicoesPage() {
                       </span>
                     </li>
                     
+                    <li className="flex items-start gap-2">
+                      <span className="text-muted-foreground/60 mt-1">•</span>
+                      <span>
+                        <strong className="text-foreground font-medium">Item/atitude banida:</strong> use o termo "pecado"
+                      </span>
+                    </li>
+
                     <li className="flex items-start gap-2">
                       <span className="text-muted-foreground/60 mt-1">•</span>
                       <span>
