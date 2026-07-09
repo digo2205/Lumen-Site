@@ -23138,7 +23138,7 @@ function DefinicoesPage() {
 
 function DownloadModpackPage() {
   reactExports.useEffect(() => {
-    const fileUrl = "https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1";
+    const fileUrl = "https://www.dropbox.com/scl/fi/5fyyc5ut4uki0in5n42de/Lumen-v1.5.zip?rlkey=e7cdjysnz3dpsegctsobbuahu&st=xfy64z7q&dl=1";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "Lumen-v1.0.zip";
@@ -23154,7 +23154,7 @@ function DownloadModpackPage() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1",
+          href: "https://www.dropbox.com/scl/fi/5fyyc5ut4uki0in5n42de/Lumen-v1.5.zip?rlkey=e7cdjysnz3dpsegctsobbuahu&st=xfy64z7q&dl=1",
           className: "text-primary hover:underline font-medium",
           children: "clique aqui"
         }
