@@ -42,6 +42,7 @@ export function ItensBanidosPage() {
         "Master Sword - em lore e pvp",
         "Gram",
         "Sigmun",
+        "Trash Bag",
       ]
     }
   ]

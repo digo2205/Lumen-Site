@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export function DownloadModpackPage() {
   useEffect(() => {
     // URL direta do Dropbox (com ?dl=1)
-    const fileUrl = "https://www.dropbox.com/scl/fi/dtv27mhujcauv4b3z4326/Lumen-v1.0.zip?rlkey=yr47eeej170zlof0d7c9zgjbk&st=pywimkwv&dl=1";
+    const fileUrl = "https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1";
 
     // Cria um link temporário e dispara o download
     const link = document.createElement("a");
@@ -22,7 +22,7 @@ export function DownloadModpackPage() {
       <p className="text-muted-foreground">
         Se o download não começar automaticamente,{" "}
         <a
-          href="https://www.dropbox.com/scl/fi/dtv27mhujcauv4b3z4326/Lumen-v1.0.zip?rlkey=yr47eeej170zlof0d7c9zgjbk&st=pywimkwv&dl=1"
+          href="https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1"
           className="text-primary hover:underline font-medium"
         >
           clique aqui
