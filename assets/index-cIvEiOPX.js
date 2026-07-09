@@ -22408,7 +22408,8 @@ function ItensBanidosPage() {
         "Greater Oakskin Elixir",
         "Master Sword - em lore e pvp",
         "Gram",
-        "Sigmun"
+        "Sigmun",
+        "Trash Bag"
       ]
     }
   ];
@@ -23137,7 +23138,7 @@ function DefinicoesPage() {
 
 function DownloadModpackPage() {
   reactExports.useEffect(() => {
-    const fileUrl = "https://www.dropbox.com/scl/fi/dtv27mhujcauv4b3z4326/Lumen-v1.0.zip?rlkey=yr47eeej170zlof0d7c9zgjbk&st=pywimkwv&dl=1";
+    const fileUrl = "https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "Lumen-v1.0.zip";
@@ -23153,7 +23154,7 @@ function DownloadModpackPage() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://www.dropbox.com/scl/fi/dtv27mhujcauv4b3z4326/Lumen-v1.0.zip?rlkey=yr47eeej170zlof0d7c9zgjbk&st=pywimkwv&dl=1",
+          href: "https://www.dropbox.com/scl/fi/zw7peaons0e9uwkkm2b8r/Lumen-v1.5.zip?rlkey=mixjc771tc6gygik13fbfazto&st=rsfitdea&dl=1",
           className: "text-primary hover:underline font-medium",
           children: "clique aqui"
         }
