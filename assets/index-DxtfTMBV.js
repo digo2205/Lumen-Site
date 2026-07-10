@@ -22410,7 +22410,8 @@ function ItensBanidosPage() {
         "Gram",
         "Sigmun",
         "Trash Bag",
-        "Chunk Loader (Kibe)"
+        "Chunk Loader (Kibe)",
+        "Arcane Catalyst"
       ]
     }
   ];
@@ -22420,7 +22421,8 @@ function ItensBanidosPage() {
     "Qualquer vinho a partir do nível um",
     "Entrar em qualquer dimensão sem permissão",
     "Criar ou duplicar moedas do Lightman's Currency",
-    "Teleportar por waystones utilizando barcos"
+    "Teleportar por waystones utilizando barcos",
+    "Criar times do FTB Teams"
   ];
   const bannedEnchantments = [
     "Disarming"
