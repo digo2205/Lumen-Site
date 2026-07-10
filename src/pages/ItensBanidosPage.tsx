@@ -43,6 +43,7 @@ export function ItensBanidosPage() {
         "Gram",
         "Sigmun",
         "Trash Bag",
+        "Chunk Loader (Kibe)",
       ]
     }
   ]
