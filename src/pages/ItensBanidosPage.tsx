@@ -44,7 +44,6 @@ export function ItensBanidosPage() {
         "Sigmun",
         "Trash Bag",
         "Chunk Loader (Kibe)",
-        "Arcane Catalyst",
       ]
     }
   ]
@@ -57,6 +56,7 @@ export function ItensBanidosPage() {
     "Criar ou duplicar moedas do Lightman's Currency",
     "Teleportar por waystones utilizando barcos",
     "Criar times do FTB Teams",
+    "Pegar bosses em lassos do Kibe"
   ]
 
   const bannedEnchantments = [
