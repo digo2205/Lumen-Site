@@ -22410,8 +22410,7 @@ function ItensBanidosPage() {
         "Gram",
         "Sigmun",
         "Trash Bag",
-        "Chunk Loader (Kibe)",
-        "Arcane Catalyst"
+        "Chunk Loader (Kibe)"
       ]
     }
   ];
@@ -22422,7 +22421,8 @@ function ItensBanidosPage() {
     "Entrar em qualquer dimensão sem permissão",
     "Criar ou duplicar moedas do Lightman's Currency",
     "Teleportar por waystones utilizando barcos",
-    "Criar times do FTB Teams"
+    "Criar times do FTB Teams",
+    "Pegar bosses em lassos do Kibe"
   ];
   const bannedEnchantments = [
     "Disarming"
@@ -23001,9 +23001,9 @@ function FormulariosPage() {
     {
       title: "Formulário de Inscrição de Filhote",
       description: "Formulário para tornar-se um filhote (ovo) no servidor",
-      status: "Indisponível",
+      status: "Disponível",
       link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      statusColor: "bg-destructive/10 text-destructive border-destructive/20",
+      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
       requirements: [
         "Formulário aprovado pelos administradores;",
         "15 anos ou mais."
