@@ -19087,11 +19087,11 @@ const createLucideIcon = (iconName, iconNode) => {
  */
 
 
-const __iconNode$h = [
+const __iconNode$m = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m4.9 4.9 14.2 14.2", key: "1m5liu" }]
 ];
-const Ban = createLucideIcon("ban", __iconNode$h);
+const Ban = createLucideIcon("ban", __iconNode$m);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19101,7 +19101,7 @@ const Ban = createLucideIcon("ban", __iconNode$h);
  */
 
 
-const __iconNode$g = [
+const __iconNode$l = [
   ["path", { d: "M10 2v8l3-3 3 3V2", key: "sqw3rj" }],
   [
     "path",
@@ -19111,7 +19111,7 @@ const __iconNode$g = [
     }
   ]
 ];
-const BookMarked = createLucideIcon("book-marked", __iconNode$g);
+const BookMarked = createLucideIcon("book-marked", __iconNode$l);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19121,7 +19121,7 @@ const BookMarked = createLucideIcon("book-marked", __iconNode$g);
  */
 
 
-const __iconNode$f = [
+const __iconNode$k = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   ["path", { d: "M16 12h2", key: "7q9ll5" }],
   ["path", { d: "M16 8h2", key: "msurwy" }],
@@ -19135,7 +19135,7 @@ const __iconNode$f = [
   ["path", { d: "M6 12h2", key: "32wvfc" }],
   ["path", { d: "M6 8h2", key: "30oboj" }]
 ];
-const BookOpenText = createLucideIcon("book-open-text", __iconNode$f);
+const BookOpenText = createLucideIcon("book-open-text", __iconNode$k);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19145,8 +19145,8 @@ const BookOpenText = createLucideIcon("book-open-text", __iconNode$f);
  */
 
 
-const __iconNode$e = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$e);
+const __iconNode$j = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$j);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19156,8 +19156,8 @@ const ChevronLeft = createLucideIcon("chevron-left", __iconNode$e);
  */
 
 
-const __iconNode$d = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$d);
+const __iconNode$i = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$i);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19167,12 +19167,12 @@ const ChevronRight = createLucideIcon("chevron-right", __iconNode$d);
  */
 
 
-const __iconNode$c = [
+const __iconNode$h = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
   ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const CircleHelp = createLucideIcon("circle-help", __iconNode$c);
+const CircleHelp = createLucideIcon("circle-help", __iconNode$h);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19182,12 +19182,12 @@ const CircleHelp = createLucideIcon("circle-help", __iconNode$c);
  */
 
 
-const __iconNode$b = [
+const __iconNode$g = [
   ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
   ["path", { d: "M10 14 21 3", key: "gplh6r" }],
   ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
 ];
-const ExternalLink = createLucideIcon("external-link", __iconNode$b);
+const ExternalLink = createLucideIcon("external-link", __iconNode$g);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19197,14 +19197,14 @@ const ExternalLink = createLucideIcon("external-link", __iconNode$b);
  */
 
 
-const __iconNode$a = [
+const __iconNode$f = [
   ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
   ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
   ["path", { d: "M10 9H8", key: "b1mrlr" }],
   ["path", { d: "M16 13H8", key: "t4e002" }],
   ["path", { d: "M16 17H8", key: "z1uh3a" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$a);
+const FileText = createLucideIcon("file-text", __iconNode$f);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19214,7 +19214,7 @@ const FileText = createLucideIcon("file-text", __iconNode$a);
  */
 
 
-const __iconNode$9 = [
+const __iconNode$e = [
   ["path", { d: "M10 10.5 8 13l2 2.5", key: "m4t9c1" }],
   ["path", { d: "m14 10.5 2 2.5-2 2.5", key: "14w2eb" }],
   [
@@ -19225,7 +19225,93 @@ const __iconNode$9 = [
     }
   ]
 ];
-const FolderCode = createLucideIcon("folder-code", __iconNode$9);
+const FolderCode = createLucideIcon("folder-code", __iconNode$e);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$d = [
+  ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
+  ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
+  ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
+  ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
+];
+const Hash = createLucideIcon("hash", __iconNode$d);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$c = [
+  [
+    "path",
+    {
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
+    }
+  ]
+];
+const Heart = createLucideIcon("heart", __iconNode$c);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$b = [
+  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
+  [
+    "path",
+    {
+      d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+      key: "1d0kgt"
+    }
+  ]
+];
+const House = createLucideIcon("house", __iconNode$b);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$a = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 16v-4", key: "1dtifu" }],
+  ["path", { d: "M12 8h.01", key: "e9boi3" }]
+];
+const Info = createLucideIcon("info", __iconNode$a);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$9 = [
+  ["path", { d: "M11 18H3", key: "n3j2dh" }],
+  ["path", { d: "m15 18 2 2 4-4", key: "1szwhi" }],
+  ["path", { d: "M16 12H3", key: "1a2rj7" }],
+  ["path", { d: "M16 6H3", key: "1wxfjs" }]
+];
+const ListCheck = createLucideIcon("list-check", __iconNode$9);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19236,12 +19322,10 @@ const FolderCode = createLucideIcon("folder-code", __iconNode$9);
 
 
 const __iconNode$8 = [
-  ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
-  ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
-  ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
-  ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
 ];
-const Hash = createLucideIcon("hash", __iconNode$8);
+const Lock = createLucideIcon("lock", __iconNode$8);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19252,15 +19336,11 @@ const Hash = createLucideIcon("hash", __iconNode$8);
 
 
 const __iconNode$7 = [
-  [
-    "path",
-    {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
-      key: "c3ymky"
-    }
-  ]
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
 ];
-const Heart = createLucideIcon("heart", __iconNode$7);
+const LogOut = createLucideIcon("log-out", __iconNode$7);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -19271,57 +19351,6 @@ const Heart = createLucideIcon("heart", __iconNode$7);
 
 
 const __iconNode$6 = [
-  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
-  [
-    "path",
-    {
-      d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
-      key: "1d0kgt"
-    }
-  ]
-];
-const House = createLucideIcon("house", __iconNode$6);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$5 = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "M12 16v-4", key: "1dtifu" }],
-  ["path", { d: "M12 8h.01", key: "e9boi3" }]
-];
-const Info = createLucideIcon("info", __iconNode$5);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$4 = [
-  ["path", { d: "M11 18H3", key: "n3j2dh" }],
-  ["path", { d: "m15 18 2 2 4-4", key: "1szwhi" }],
-  ["path", { d: "M16 12H3", key: "1a2rj7" }],
-  ["path", { d: "M16 6H3", key: "1wxfjs" }]
-];
-const ListCheck = createLucideIcon("list-check", __iconNode$4);
-
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode$3 = [
   ["path", { d: "M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4", key: "re6nr2" }],
   ["path", { d: "M2 6h4", key: "aawbzj" }],
   ["path", { d: "M2 10h4", key: "l0bgd4" }],
@@ -19335,7 +19364,52 @@ const __iconNode$3 = [
     }
   ]
 ];
-const NotebookPen = createLucideIcon("notebook-pen", __iconNode$3);
+const NotebookPen = createLucideIcon("notebook-pen", __iconNode$6);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$5 = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
+];
+const Plus = createLucideIcon("plus", __iconNode$5);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$4 = [
+  ["path", { d: "M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "1357e3" }],
+  ["path", { d: "M3 3v5h5", key: "1xhq8a" }]
+];
+const RotateCcw = createLucideIcon("rotate-ccw", __iconNode$4);
+
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+const __iconNode$3 = [
+  ["path", { d: "M3 6h18", key: "d0wm0j" }],
+  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
+  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
+  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
+  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
+];
+const Trash2 = createLucideIcon("trash-2", __iconNode$3);
 
 /**
  * @license lucide-react v0.511.0 - ISC
@@ -22123,7 +22197,184 @@ function HistoriaPage() {
   ] }) });
 }
 
+const STORAGE_KEY = "lumen-site-data";
+const defaultData = {
+  bannedItems: [
+    "Magia - Abyssal Blast",
+    "Aegis Wine",
+    "Black Sun Sword",
+    "Coin Minting Machine",
+    "Cross Necklace",
+    "Crystal Heart",
+    "Dimensional Carver",
+    "Draconic Twinsword",
+    "Eiswein",
+    "Encantamento - Disarming",
+    "Enderic Railgun",
+    "Ferricore Ingot",
+    "Ignitium Boots",
+    "Ignitium Chestplate",
+    "Ignitium Elytra Chestplate",
+    "Ignitium Helmet",
+    "Ignitium Leggings",
+    "Magia - Invisibility",
+    "Longsword of the Plague",
+    "Magenta",
+    "Meat Shredder",
+    "Mellohi Wine",
+    "Apple Wine",
+    "Mortuth",
+    "Netherfused Gem - Radiance",
+    "Runefused Gem - Immolation",
+    "Shattered Dimensional Carver",
+    "Transmutation Table",
+    "Erdrick's Sword",
+    "Transmuting Elixir",
+    "Oakskin Elixir",
+    "Greater Oakskin Elixir",
+    "Master Sword - em lore e pvp",
+    "Gram",
+    "Sigmun",
+    "Trash Bag",
+    "Chunk Loader (Kibe)"
+  ],
+  bannedAttitudes: [
+    "Invisiblidade em eventos",
+    "Charm of Shrinking em eventos",
+    "Qualquer vinho a partir do nível um",
+    "Entrar em qualquer dimensão sem permissão",
+    "Criar ou duplicar moedas do Lightman's Currency",
+    "Teleportar por waystones utilizando barcos",
+    "Criar times do FTB Teams",
+    "Pegar bosses em lassos do Kibe"
+  ],
+  bannedEnchantments: ["Disarming"],
+  bannedSpells: ["Abyssal Blast"],
+  bannedMods: ["Just Dire Things", "Simply Swords (só ferramentas únicas)", "Chunk Loader"],
+  serverRules: [
+    { id: "s1", title: "1. Discriminação", text: "É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros." },
+    { id: "s2", title: "2. Respeito", text: "Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém." },
+    { id: "s3", title: "3. Assédio", text: "Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor." },
+    { id: "s4", title: "4. Discussões", text: "Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga." },
+    { id: "s5", title: "5. Ameaças", text: "É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante." },
+    { id: "s6", title: "6. Doxxing", text: "Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros." },
+    { id: "s7", title: "7. Spam", text: "Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor." },
+    { id: "s8", title: "8. Links", text: "Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero." },
+    { id: "s9", title: "9. Conteúdo", text: "Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material perturbador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc." },
+    { id: "s10", title: "10. Flood", text: "Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina." },
+    { id: "s11", title: "11. Comportamentos", text: "Seja comportado, não pratique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill)." },
+    { id: "s12", title: "12. Incentivo", text: 'Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que "não seja legal".' },
+    { id: "s13", title: "13. Assuntos", text: "Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas." },
+    { id: "s14", title: "14. Cheats", text: "Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos." },
+    { id: "s15", title: "15. Colaboração", text: "Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes." },
+    { id: "s16", title: "16. Trapaças", text: "Não tente procurar bugs ou falhas, mantenha o espírito da diversão." },
+    { id: "s17", title: "17. Instruções", text: "Siga as instruções dadas pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes." },
+    { id: "s18", title: "18. Ações Perturbadoras", text: "Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nesta diretriz." }
+  ],
+  roleplayRules: [
+    { id: "r1", title: "1. Hard-RP", text: "Siga o roleplay o tempo todo, independente das circunstâncias." },
+    { id: "r2", title: "2. Interpretação", text: "Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age." },
+    { id: "r3", title: "3. Metagaming", text: 'Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: "mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não" ou "estou numa chamada com um amigo, não posso falar informações do roleplay para ele"' },
+    { id: "r4", title: "4. Random Death Match (RDM)", text: "Não mate jogadores, ou semelhantes sem razão aparente na lore." },
+    { id: "r5", title: "5. Autonomia", text: 'Na vida real você não chama um "administrador" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord.' },
+    { id: "r6", title: "6. Preservação", text: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." },
+    { id: "r7", title: "7. Dark-rp", text: "Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados." },
+    { id: "r8", title: "8. Itens de Lore", text: "Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copiá-los, mas sempre devolver aonde encontrou." }
+  ],
+  minecraftRules: [
+    { id: "m1", title: "1. Lag", text: "Qualquer coisa que cause lag ou crashs no servidor será destruído sem aviso prévio, sejam máquinas, rituais, entre outros." },
+    { id: "m2", title: "2. Construções", text: "Não destrua construções que sejam pertencentes a lore ou a outros jogadores." },
+    { id: "m3", title: "3. Roubo", text: "Não roube os jogadores, entidades ou mesmo as casas dos jogadores." },
+    { id: "m4", title: "4. Modelos", text: "Não utilize modelos ou skins sem autorização da administração do servidor." },
+    { id: "m5", title: "5. Waystones", text: "Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones." },
+    { id: "m6", title: "6. Inatividade", text: "Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord." },
+    { id: "m7", title: "7. Vida", text: "Não ultrapasse sessenta corações de vida (três barras)." },
+    { id: "m8", title: '8. "Abuso"', text: "Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe." },
+    { id: "m9", title: "9. Placas & Livros", text: "Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí." }
+  ],
+  forms: [
+    {
+      id: "f1",
+      title: "Formulário de Inscrição de Jogador",
+      description: "Formulário para tornar-se um jogador (andarilho) no servidor",
+      status: "Disponível",
+      link: "https://forms.gle/tKXWh3gYeN7XQfB36",
+      requirements: ["Formulário aprovado pelos administradores;", "14 anos ou mais."]
+    },
+    {
+      id: "f2",
+      title: "Formulário de Inscrição de Staff",
+      description: "Formulário para tornar-se um staff no servidor",
+      status: "Disponível",
+      link: "https://forms.gle/1CghL7KTVyPJMTZ69",
+      requirements: ["Formulário aprovado pelos administradores;", "15 anos ou mais."]
+    },
+    {
+      id: "f3",
+      title: "Formulário de Inscrição de Filhote",
+      description: "Formulário para tornar-se um filhote (ovo) no servidor",
+      status: "Indisponível",
+      link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
+      requirements: ["Formulário aprovado pelos administradores;", "15 anos ou mais."]
+    }
+  ]
+};
+function loadData() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return structuredClone(defaultData);
+    const parsed = JSON.parse(raw);
+    return { ...structuredClone(defaultData), ...parsed };
+  } catch {
+    return structuredClone(defaultData);
+  }
+}
+function saveData(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  window.dispatchEvent(new Event("lumen-data-updated"));
+}
+function resetData() {
+  localStorage.removeItem(STORAGE_KEY);
+  window.dispatchEvent(new Event("lumen-data-updated"));
+}
+function useSiteData() {
+  const [data, setData] = reactExports.useState(loadData);
+  reactExports.useEffect(() => {
+    const handler = () => setData(loadData());
+    window.addEventListener("lumen-data-updated", handler);
+    window.addEventListener("storage", handler);
+    return () => {
+      window.removeEventListener("lumen-data-updated", handler);
+      window.removeEventListener("storage", handler);
+    };
+  }, []);
+  return data;
+}
+const AUTH_KEY = "lumen-dashboard-auth";
+const ADMIN_USER = "admin";
+const ADMIN_PASS = "LumenSMP#123";
+function login(user, pass) {
+  if (user === ADMIN_USER && pass === ADMIN_PASS) {
+    sessionStorage.setItem(AUTH_KEY, "1");
+    return true;
+  }
+  return false;
+}
+function isAuthenticated() {
+  return sessionStorage.getItem(AUTH_KEY) === "1";
+}
+function logout() {
+  sessionStorage.removeItem(AUTH_KEY);
+}
+
+function RuleBlock({ rule }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: rule.title }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: rule.text })
+  ] });
+}
 function DiretrizesPage() {
+  const data = useSiteData();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ListCheck, { className: "w-5 h-5 text-muted-foreground" }) }),
@@ -22132,80 +22383,7 @@ function DiretrizesPage() {
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "prose max-w-none", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6", children: "Diretrizes do Servidor" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Discriminação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Respeito" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Assédio" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Discussões" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Ameaças" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Doxxing" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Spam" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "8. Links" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "9. Conteúdo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material perturbador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "10. Flood" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "11. Comportamentos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Seja comportado, nãoifique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill)." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "12. Incentivo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que "não seja legal".' })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "13. Assuntos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "14. Cheats" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "15. Colaboração" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "16. Trapaças" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não tente procurar bugs ou falhas, mantenha o espírito da diversão." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "17. Instruções" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Siga as instruções dadas pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "18. Ações Perturbadoras" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nesta diretriz." })
-          ] })
-        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: data.serverRules.map((rule) => /* @__PURE__ */ jsxRuntimeExports.jsx(RuleBlock, { rule }, rule.id)) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 bg-destructive/10 border-destructive/30 my-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-destructive mt-0.5 flex-shrink-0" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
@@ -22214,79 +22392,9 @@ function DiretrizesPage() {
           ] })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6 mt-10", children: "Diretrizes do Roleplay" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Hard-RP" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Siga o roleplay o tempo todo, independente das circunstâncias." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Interpretação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Metagaming" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: "mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não" ou "estou numa chamada com um amigo, não posso falar informações do roleplay para ele"' })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Random Death Match (RDM)" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não mate jogadores, ou semelhantes sem razão aparente na lore." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Autonomia" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: 'Na vida real você não chama um "administrador" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord.' })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Preservação" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Dark-rp" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "8. Itens de Lore" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copia=los, mas sempre devolver aonde encontrou." })
-          ] })
-        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: data.roleplayRules.map((rule) => /* @__PURE__ */ jsxRuntimeExports.jsx(RuleBlock, { rule }, rule.id)) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-foreground mb-6 mt-10", children: "Diretrizes do Minecraft" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "1. Lag" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Qualquer coisa que cause lag ou crashs no servidor será destruído sem aviso prévio, sejam máquinas, rituais, entre outros." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "2. Construções" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não destrua construções que sejam pertencentes a lore ou a outros jogadores." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "3. Roubo" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não roube os jogadores, entidades ou mesmo as casas dos jogadores." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "4. Modelos" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não utilize modelos ou skins sem autorização da administração do servidor." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "5. Waystones" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "6. Inatividade" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "7. Vida" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não ultrapasse sessenta corações de vida (três barras)." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: '8. "Abuso"' }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-1", children: "9. Placas & Livros" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí." })
-          ] })
-        ] })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: data.minecraftRules.map((rule) => /* @__PURE__ */ jsxRuntimeExports.jsx(RuleBlock, { rule }, rule.id)) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/lore", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
@@ -22370,71 +22478,17 @@ function FAQPage() {
 }
 
 function ItensBanidosPage() {
+  const data = useSiteData();
   const bannedItems = [
     {
       category: "Itens Banidos",
-      items: [
-        "Magia - Abyssal Blast",
-        "Aegis Wine",
-        "Black Sun Sword",
-        "Coin Minting Machine",
-        "Cross Necklace",
-        "Crystal Heart",
-        "Dimensional Carver",
-        "Draconic Twinsword",
-        "Eiswein",
-        "Encantamento - Disarming",
-        "Enderic Railgun",
-        "Ferricore Ingot",
-        "Ignitium Boots",
-        "Ignitium Chestplate",
-        "Ignitium Elytra Chestplate",
-        "Ignitium Helmet",
-        "Ignitium Leggings",
-        "Magia - Invisibility",
-        "Longsword of the Plague",
-        "Magenta",
-        "Meat Shredder",
-        "Mellohi Wine",
-        "Apple Wine",
-        "Mortuth",
-        "Netherfused Gem - Radiance",
-        "Runefused Gem - Immolation",
-        "Shattered Dimensional Carver",
-        "Transmutation Table",
-        "Erdrick's Sword",
-        "Transmuting Elixir",
-        "Oakskin Elixir",
-        "Greater Oakskin Elixir",
-        "Master Sword - em lore e pvp",
-        "Gram",
-        "Sigmun",
-        "Trash Bag",
-        "Chunk Loader (Kibe)"
-      ]
+      items: data.bannedItems
     }
   ];
-  const bannedAttitudes = [
-    "Invisiblidade em eventos",
-    "Charm of Shrinking em eventos",
-    "Qualquer vinho a partir do nível um",
-    "Entrar em qualquer dimensão sem permissão",
-    "Criar ou duplicar moedas do Lightman's Currency",
-    "Teleportar por waystones utilizando barcos",
-    "Criar times do FTB Teams",
-    "Pegar bosses em lassos do Kibe"
-  ];
-  const bannedEnchantments = [
-    "Disarming"
-  ];
-  const bannedSpells = [
-    "Abyssal Blast"
-  ];
-  const bannedMods = [
-    "Just Dire Things",
-    "Simply Swords (só ferramentas únicas)",
-    "Chunk Loader"
-  ];
+  const bannedAttitudes = data.bannedAttitudes;
+  const bannedEnchantments = data.bannedEnchantments;
+  const bannedSpells = data.bannedSpells;
+  const bannedMods = data.bannedMods;
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Ban, { className: "w-5 h-5 text-muted-foreground" }) }),
@@ -22975,41 +23029,11 @@ function CriacaoPersonagemPage() {
 }
 
 function FormulariosPage() {
-  const forms = [
-    {
-      title: "Formulário de Inscrição de Jogador",
-      description: "Formulário para tornar-se um jogador (andarilho) no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/tKXWh3gYeN7XQfB36",
-      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "14 anos ou mais."
-      ]
-    },
-    {
-      title: "Formulário de Inscrição de Staff",
-      description: "Formulário para tornar-se um staff no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/1CghL7KTVyPJMTZ69",
-      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "15 anos ou mais."
-      ]
-    },
-    {
-      title: "Formulário de Inscrição de Filhote",
-      description: "Formulário para tornar-se um filhote (ovo) no servidor",
-      status: "Indisponível",
-      link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      statusColor: "bg-destructive/10 text-destructive border-destructive/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "15 anos ou mais."
-      ]
-    }
-  ];
+  const data = useSiteData();
+  const forms = data.forms.map((f) => ({
+    ...f,
+    statusColor: f.status === "Disponível" ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" : "bg-destructive/10 text-destructive border-destructive/20"
+  }));
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-3xl mx-auto space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "mb-6 space-y-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(NotebookPen, { className: "w-5 h-5 text-muted-foreground" }) }),
@@ -23039,17 +23063,13 @@ function FormulariosPage() {
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: req })
           ] }, reqIndex)) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Button,
-          {
-            asChild: true,
-            className: "w-full gap-2",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: form.link, target: "_blank", rel: "noopener noreferrer", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" }),
-              "Acessar Formulário"
-            ] })
-          }
-        )
+        form.status === "Disponível" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, className: "w-full gap-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: form.link, target: "_blank", rel: "noopener noreferrer", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" }),
+          "Acessar Formulário"
+        ] }) }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { className: "w-full gap-2", disabled: true, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" }),
+          "Indisponível no momento"
+        ] })
       ] }, index)) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between gap-4 pt-2", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/principal/redes-sociais", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-4 border border-border bg-card hover:bg-accent/40 transition-colors cursor-pointer", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
@@ -23195,6 +23215,231 @@ function DownloadEmotesPage() {
   ] });
 }
 
+const Input = reactExports.forwardRef(
+  ({ className, type, ...props }, ref) => {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "input",
+      {
+        type,
+        className: cn(
+          "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          className
+        ),
+        ref,
+        ...props
+      }
+    );
+  }
+);
+Input.displayName = "Input";
+
+function DashboardLoginPage() {
+  const [user, setUser] = reactExports.useState("");
+  const [pass, setPass] = reactExports.useState("");
+  const [error, setError] = reactExports.useState("");
+  const navigate = useNavigate();
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (login(user, pass)) {
+      navigate("/dashboard/painel");
+    } else {
+      setError("Usuário ou senha incorretos.");
+    }
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-16 px-8 flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-8 w-full max-w-sm border border-border bg-card", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center gap-2 mb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 bg-muted rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Lock, { className: "w-5 h-5 text-muted-foreground" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl font-bold text-foreground", children: "Dashboard Lumen" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Acesso restrito à administração" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleSubmit, className: "space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "text-sm font-medium text-foreground", children: "Usuário" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Input, { value: user, onChange: (e) => setUser(e.target.value), autoFocus: true })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "text-sm font-medium text-foreground", children: "Senha" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Input, { type: "password", value: pass, onChange: (e) => setPass(e.target.value) })
+      ] }),
+      error && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-destructive", children: error }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { type: "submit", className: "w-full", children: "Entrar" })
+    ] })
+  ] }) });
+}
+
+const LIST_FIELDS = [
+  { key: "bannedItems", label: "Itens Banidos" },
+  { key: "bannedAttitudes", label: "Atitudes Banidas" },
+  { key: "bannedEnchantments", label: "Encantamentos Banidos" },
+  { key: "bannedSpells", label: "Magias Banidas" },
+  { key: "bannedMods", label: "Mods Banidos" }
+];
+function DashboardPage() {
+  const navigate = useNavigate();
+  const [authed, setAuthed] = reactExports.useState(false);
+  const [tab, setTab] = reactExports.useState("itens");
+  const [data, setData] = reactExports.useState(loadData);
+  const [newValues, setNewValues] = reactExports.useState({});
+  reactExports.useEffect(() => {
+    if (!isAuthenticated()) {
+      navigate("/dashboard");
+      return;
+    }
+    setAuthed(true);
+  }, [navigate]);
+  function persist(next) {
+    setData(next);
+    saveData(next);
+  }
+  function addListItem(field) {
+    const value = (newValues[field] || "").trim();
+    if (!value) return;
+    const next = { ...data, [field]: [...data[field], value] };
+    persist(next);
+    setNewValues((prev) => ({ ...prev, [field]: "" }));
+  }
+  function removeListItem(field, index) {
+    const list = [...data[field]];
+    list.splice(index, 1);
+    persist({ ...data, [field]: list });
+  }
+  function addRule(field) {
+    const rule = { id: crypto.randomUUID(), title: "Nova regra", text: "" };
+    persist({ ...data, [field]: [...data[field], rule] });
+  }
+  function updateRule(field, id, patch) {
+    const list = data[field].map((r) => r.id === id ? { ...r, ...patch } : r);
+    persist({ ...data, [field]: list });
+  }
+  function removeRule(field, id) {
+    persist({ ...data, [field]: data[field].filter((r) => r.id !== id) });
+  }
+  function toggleFormStatus(id) {
+    const list = data.forms.map(
+      (f) => f.id === id ? { ...f, status: f.status === "Disponível" ? "Indisponível" : "Disponível" } : f
+    );
+    persist({ ...data, forms: list });
+  }
+  function handleLogout() {
+    logout();
+    navigate("/dashboard");
+  }
+  if (!authed) return null;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-screen-2xl py-8 px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-foreground", children: "Dashboard" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", size: "sm", onClick: () => {
+          resetData();
+          setData(loadData());
+        }, className: "gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(RotateCcw, { className: "w-4 h-4" }),
+          " Restaurar padrão"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", size: "sm", onClick: handleLogout, className: "gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-4 h-4" }),
+          " Sair"
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-2 border-b border-border", children: [
+      { id: "itens", label: "Itens/Atitudes Banidos", icon: Ban },
+      { id: "regras", label: "Regras", icon: ListCheck },
+      { id: "formularios", label: "Formulários", icon: NotebookPen }
+    ].map(({ id, label, icon: Icon }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "button",
+      {
+        onClick: () => setTab(id),
+        className: `flex items-center gap-2 px-4 py-2 text-sm font-medium border-b-2 transition-colors ${tab === id ? "border-primary text-foreground" : "border-transparent text-muted-foreground hover:text-foreground"}`,
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Icon, { className: "w-4 h-4" }),
+          label
+        ]
+      },
+      id
+    )) }),
+    tab === "itens" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: LIST_FIELDS.map(({ key, label }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground mb-4", children: label }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2 mb-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            placeholder: `Adicionar em "${label}"`,
+            value: newValues[key] || "",
+            onChange: (e) => setNewValues((prev) => ({ ...prev, [key]: e.target.value })),
+            onKeyDown: (e) => e.key === "Enter" && addListItem(key)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { size: "icon", onClick: () => addListItem(key), children: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-2", children: [
+        data[key].map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between gap-2 p-2 bg-muted/30 rounded-md border border-border", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-foreground", children: item }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: () => removeListItem(key, i), className: "text-muted-foreground hover:text-destructive", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-4 h-4" }) })
+        ] }, i)),
+        data[key].length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Nenhum item." })
+      ] })
+    ] }, key)) }),
+    tab === "regras" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: [
+      ["serverRules", "Diretrizes do Servidor"],
+      ["roleplayRules", "Diretrizes do Roleplay"],
+      ["minecraftRules", "Diretrizes do Minecraft"]
+    ].map(
+      ([field, label]) => /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: label }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { size: "sm", variant: "outline", onClick: () => addRule(field), className: "gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }),
+            " Nova regra"
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: data[field].map((rule) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-3 border border-border rounded-md space-y-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Input,
+              {
+                value: rule.title,
+                onChange: (e) => updateRule(field, rule.id, { title: e.target.value }),
+                className: "font-medium"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: () => removeRule(field, rule.id), className: "text-muted-foreground hover:text-destructive flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-4 h-4" }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "textarea",
+            {
+              value: rule.text,
+              onChange: (e) => updateRule(field, rule.id, { text: e.target.value }),
+              rows: 2,
+              className: "w-full text-sm rounded-md border border-input bg-background px-3 py-2 text-foreground"
+            }
+          )
+        ] }, rule.id)) })
+      ] }, field)
+    ) }),
+    tab === "formularios" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: data.forms.map((form) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "p-6 border border-border bg-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground", children: form.title }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: form.description }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-2 break-all", children: form.link })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-end gap-2 flex-shrink-0", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            className: `px-2.5 py-0.5 rounded-full text-xs font-medium border ${form.status === "Disponível" ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" : "bg-destructive/10 text-destructive border-destructive/20"}`,
+            children: form.status
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { size: "sm", variant: "outline", onClick: () => toggleFormStatus(form.id), children: [
+          "Marcar como ",
+          form.status === "Disponível" ? "Indisponível" : "Disponível"
+        ] })
+      ] })
+    ] }) }, form.id)) })
+  ] }) });
+}
+
 function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background flex flex-col text-foreground", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Header, {}),
@@ -23209,7 +23454,9 @@ function App() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/principal/criacao-de-personagem", element: /* @__PURE__ */ jsxRuntimeExports.jsx(CriacaoPersonagemPage, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/inscricao/formularios", element: /* @__PURE__ */ jsxRuntimeExports.jsx(FormulariosPage, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/modpack/download", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DownloadModpackPage, {}) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/emotes/download", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DownloadEmotesPage, {}) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/emotes/download", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DownloadEmotesPage, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/dashboard", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DashboardLoginPage, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/dashboard/painel", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DashboardPage, {}) })
     ] }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
   ] }) });
