@@ -2,43 +2,18 @@ import { Button } from '../components/ui/button'
 import { Card } from '../components/ui/card'
 import { ChevronLeft, FileText, ExternalLink, NotebookPen } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useSiteData } from '../lib/store'
 
 export function FormulariosPage() {
-  const forms = [
-    {
-      title: "Formulário de Inscrição de Jogador",
-      description: "Formulário para tornar-se um jogador (andarilho) no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/tKXWh3gYeN7XQfB36",
-      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "14 anos ou mais."
-      ]
-    },
-    {
-      title: "Formulário de Inscrição de Staff",
-      description: "Formulário para tornar-se um staff no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/1CghL7KTVyPJMTZ69",
-      statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "15 anos ou mais."
-      ]
-    },
-    {
-      title: "Formulário de Inscrição de Filhote",
-      description: "Formulário para tornar-se um filhote (ovo) no servidor",
-      status: "Indisponível",
-      link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      statusColor: "bg-destructive/10 text-destructive border-destructive/20",
-      requirements: [
-        "Formulário aprovado pelos administradores;",
-        "15 anos ou mais."
-      ]
-    }    
-  ]
+  const data = useSiteData()
+
+  const forms = data.forms.map((f) => ({
+    ...f,
+    statusColor:
+      f.status === "Disponível"
+        ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+        : "bg-destructive/10 text-destructive border-destructive/20",
+  }))
 
   return (
     <div className="max-w-screen-2xl py-8 px-8">
@@ -98,15 +73,19 @@ export function FormulariosPage() {
                   </ul>
                 </div>
 
-                <Button 
-                  asChild
-                  className="w-full gap-2"
-                >
-                  <a href={form.link} target="_blank" rel="noopener noreferrer">
+                {form.status === "Disponível" ? (
+                  <Button asChild className="w-full gap-2">
+                    <a href={form.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      Acessar Formulário
+                    </a>
+                  </Button>
+                ) : (
+                  <Button className="w-full gap-2" disabled>
                     <ExternalLink className="w-4 h-4" />
-                    Acessar Formulário
-                  </a>
-                </Button>
+                    Indisponível no momento
+                  </Button>
+                )}
               </Card>
             ))}
           </div>

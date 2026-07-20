@@ -1,77 +1,22 @@
 import { Card } from '../components/ui/card'
 import { ChevronRight, ChevronLeft, X, AlertTriangle, Ban } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useSiteData } from '../lib/store'
 
 export function ItensBanidosPage() {
+  const data = useSiteData()
+
   const bannedItems = [
     {
       category: "Itens Banidos",
-      items: [
-        "Magia - Abyssal Blast",
-        "Aegis Wine",
-        "Black Sun Sword",
-        "Coin Minting Machine",
-        "Cross Necklace",
-        "Crystal Heart",
-        "Dimensional Carver",
-        "Draconic Twinsword",
-        "Eiswein",
-        "Encantamento - Disarming",
-        "Enderic Railgun",
-        "Ferricore Ingot",
-        "Ignitium Boots",
-        "Ignitium Chestplate",
-        "Ignitium Elytra Chestplate",
-        "Ignitium Helmet",
-        "Ignitium Leggings",
-        "Magia - Invisibility",
-        "Longsword of the Plague",
-        "Magenta",
-        "Meat Shredder",
-        "Mellohi Wine",
-        "Apple Wine",
-        "Mortuth",
-        "Netherfused Gem - Radiance",
-        "Runefused Gem - Immolation",
-        "Shattered Dimensional Carver",
-        "Transmutation Table",
-        "Erdrick's Sword",
-        "Transmuting Elixir",
-        "Oakskin Elixir",
-        "Greater Oakskin Elixir",
-        "Master Sword - em lore e pvp",
-        "Gram",
-        "Sigmun",
-        "Trash Bag",
-        "Chunk Loader (Kibe)",
-      ]
+      items: data.bannedItems,
     }
   ]
 
-  const bannedAttitudes = [
-    "Invisiblidade em eventos",
-    "Charm of Shrinking em eventos",
-    "Qualquer vinho a partir do nível um",
-    "Entrar em qualquer dimensão sem permissão", 
-    "Criar ou duplicar moedas do Lightman's Currency",
-    "Teleportar por waystones utilizando barcos",
-    "Criar times do FTB Teams",
-    "Pegar bosses em lassos do Kibe"
-  ]
-
-  const bannedEnchantments = [
-    "Disarming",
-  ]
-
-  const bannedSpells = [
-    "Abyssal Blast",
-  ]
-
-  const bannedMods = [
-    "Just Dire Things",
-    "Simply Swords (só ferramentas únicas)",
-    "Chunk Loader",
-  ]
+  const bannedAttitudes = data.bannedAttitudes
+  const bannedEnchantments = data.bannedEnchantments
+  const bannedSpells = data.bannedSpells
+  const bannedMods = data.bannedMods
 
   return (
     <div className="max-w-screen-2xl py-8 px-8">

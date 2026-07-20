@@ -13,6 +13,8 @@ import { FormulariosPage } from './pages/FormulariosPage'
 import { DefinicoesPage } from './pages/DefinicoesPage'
 import { DownloadModpackPage } from './pages/DownloadPage'
 import { DownloadEmotesPage } from './pages/DownloadEmotesPage';
+import { DashboardLoginPage } from './pages/DashboardLoginPage'
+import { DashboardPage } from './pages/DashboardPage'
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             <Route path="/inscricao/formularios" element={<FormulariosPage />} />
             <Route path="/modpack/download" element={<DownloadModpackPage />} />
             <Route path="/emotes/download" element={<DownloadEmotesPage />} />
+            <Route path="/dashboard" element={<DashboardLoginPage />} />
+            <Route path="/dashboard/painel" element={<DashboardPage />} />
           </Routes>
         </Layout>
         <Footer />

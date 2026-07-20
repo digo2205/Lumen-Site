@@ -1,8 +1,20 @@
 import { Card } from '../components/ui/card'
 import { ChevronRight, ChevronLeft, AlertTriangle, ListCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useSiteData, type Rule } from '../lib/store'
+
+function RuleBlock({ rule }: { rule: Rule }) {
+  return (
+    <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
+      <h3 className="text-lg font-semibold text-foreground mb-1">{rule.title}</h3>
+      <p className="text-muted-foreground">{rule.text}</p>
+    </div>
+  )
+}
 
 export function DiretrizesPage() {
+  const data = useSiteData()
+
   return (
     <div className="max-w-screen-2xl py-8 px-8">
       <div className="max-w-3xl mx-auto space-y-6">
@@ -24,134 +36,11 @@ export function DiretrizesPage() {
           <div className="prose max-w-none">
             <h2 className="text-2xl font-bold text-foreground mb-6">Diretrizes do Servidor</h2>
             <div className="space-y-4">
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">1. Discriminação</h3>
-                <p className="text-muted-foreground">
-                  É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">2. Respeito</h3>
-                <p className="text-muted-foreground">
-                  Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">3. Assédio</h3>
-                <p className="text-muted-foreground">
-                  Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">4. Discussões</h3>
-                <p className="text-muted-foreground">
-                  Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">5. Ameaças</h3>
-                <p className="text-muted-foreground">
-                  É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">6. Doxxing</h3>
-                <p className="text-muted-foreground">
-                  Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">7. Spam</h3>
-                <p className="text-muted-foreground">
-                  Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">8. Links</h3>
-                <p className="text-muted-foreground">
-                  Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">9. Conteúdo</h3>
-                <p className="text-muted-foreground">
-                  Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material perturbador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc.
-                </p>
-              </div> 
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">10. Flood</h3>
-                <p className="text-muted-foreground">
-                  Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina.
-                </p>
-              </div>      
-              
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">11. Comportamentos</h3>
-                <p className="text-muted-foreground">
-                  Seja comportado, nãoifique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill).
-                </p>
-              </div>     
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">12. Incentivo</h3>
-                <p className="text-muted-foreground">
-                  Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que "não seja legal".
-                </p>
-              </div>    
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">13. Assuntos</h3>
-                <p className="text-muted-foreground">
-                  Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas.
-                </p>
-              </div>    
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">14. Cheats</h3>
-                <p className="text-muted-foreground">
-                  Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos.
-                </p>
-              </div>        
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">15. Colaboração</h3>
-                <p className="text-muted-foreground">
-                  Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes.
-                </p>
-              </div>    
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">16. Trapaças</h3>
-                <p className="text-muted-foreground">
-                  Não tente procurar bugs ou falhas, mantenha o espírito da diversão.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">17. Instruções</h3>
-                <p className="text-muted-foreground">
-                  Siga as instruções dadas pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes.
-                </p>
-              </div>      
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">18. Ações Perturbadoras</h3>
-                <p className="text-muted-foreground">
-                  Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nesta diretriz.
-                </p>
-              </div>             
+              {data.serverRules.map((rule) => (
+                <RuleBlock key={rule.id} rule={rule} />
+              ))}
             </div>
 
-            {/* Card de Alerta Importante */}
             <Card className="p-4 bg-destructive/10 border-destructive/30 my-6">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
@@ -160,135 +49,21 @@ export function DiretrizesPage() {
                   <p className="leading-relaxed">As diretrizes do servidor valem para o servidor do Discord e para o servidor do Minecraft.</p>
                 </div>
               </div>
-            </Card>            
+            </Card>
 
             <h2 className="text-2xl font-bold text-foreground mb-6 mt-10">Diretrizes do Roleplay</h2>
             <div className="space-y-4">
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">1. Hard-RP</h3>
-                <p className="text-muted-foreground">
-                  Siga o roleplay o tempo todo, independente das circunstâncias.
-                </p>
-              </div>   
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">2. Interpretação</h3>
-                <p className="text-muted-foreground">
-                  Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age.
-                </p>
-              </div>     
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">3. Metagaming</h3>
-                <p className="text-muted-foreground">
-                  Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: "mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não" ou "estou numa chamada com um amigo, não posso falar informações do roleplay para ele"
-                </p>
-              </div>    
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">4. Random Death Match (RDM)</h3>
-                <p className="text-muted-foreground">
-                  Não mate jogadores, ou semelhantes sem razão aparente na lore.
-                </p>
-              </div>      
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">5. Autonomia</h3>
-                <p className="text-muted-foreground">
-                  Na vida real você não chama um "administrador" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord.
-                </p>
-              </div>         
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">6. Preservação</h3>
-                <p className="text-muted-foreground">
-                  Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo.
-                </p>
-              </div>   
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">7. Dark-rp</h3>
-                <p className="text-muted-foreground">
-                  Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados.
-                </p>
-              </div>       
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">8. Itens de Lore</h3>
-                <p className="text-muted-foreground">
-                  Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copia=los, mas sempre devolver aonde encontrou.
-                </p>
-              </div>                 
-                                                                                                                                                     
+              {data.roleplayRules.map((rule) => (
+                <RuleBlock key={rule.id} rule={rule} />
+              ))}
             </div>
-
-            
 
             <h2 className="text-2xl font-bold text-foreground mb-6 mt-10">Diretrizes do Minecraft</h2>
             <div className="space-y-4">
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">1. Lag</h3>
-                <p className="text-muted-foreground">
-                  Qualquer coisa que cause lag ou crashs no servidor será destruído sem aviso prévio, sejam máquinas, rituais, entre outros.
-                </p>
-              </div>   
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">2. Construções</h3>
-                <p className="text-muted-foreground">
-                  Não destrua construções que sejam pertencentes a lore ou a outros jogadores.
-                </p>
-              </div>  
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">3. Roubo</h3>
-                <p className="text-muted-foreground">
-                  Não roube os jogadores, entidades ou mesmo as casas dos jogadores.
-                </p>
-              </div>     
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">4. Modelos</h3>
-                <p className="text-muted-foreground">
-                  Não utilize modelos ou skins sem autorização da administração do servidor.
-                </p>
-              </div>     
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">5. Waystones</h3>
-                <p className="text-muted-foreground">
-                  Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones.
-                </p>
-              </div>        
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">6. Inatividade</h3>
-                <p className="text-muted-foreground">
-                  Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord.
-                </p>
-              </div>         
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">7. Vida</h3>
-                <p className="text-muted-foreground">
-                  Não ultrapasse sessenta corações de vida (três barras).
-                </p>
-              </div>   
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">8. "Abuso"</h3>
-                <p className="text-muted-foreground">
-                  Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe.
-                </p>
-              </div>    
-
-              <div className="border-l-4 border-primary bg-muted/30 p-4 rounded-r-lg">
-                <h3 className="text-lg font-semibold text-foreground mb-1">9. Placas & Livros</h3>
-                <p className="text-muted-foreground">
-                  Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí.
-                </p>
-              </div>                                                                                                                                                             
-            </div>              
+              {data.minecraftRules.map((rule) => (
+                <RuleBlock key={rule.id} rule={rule} />
+              ))}
+            </div>
           </div>
 
           {/* Navegação Inferior */}
