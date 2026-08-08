@@ -1,32 +1,10 @@
-// Store simples de conteúdo editável do site, persistido em localStorage.
-// Cada página lê daqui em vez de ter os dados fixos no componente.
-
-export interface Rule {
-  id: string
-  title: string
-  text: string
-}
-
-export interface FormEntry {
-  id: string
-  title: string
-  description: string
-  status: "Disponível" | "Indisponível"
-  link: string
-  requirements: string[]
-}
-
-export interface Idea {
-  id: string
-  title: string
-  text: string
-  createdAt: number
-}
+// Conteúdo completo da lore, extraído do documento oficial (LumenSMP - Lore).
+// Estruturado em categorias -> páginas, para exibição paginada no dashboard.
 
 export interface LorePage {
   id: string
   title: string
-  paragraphs: string[]
+  content: string[] // parágrafos
 }
 
 export interface LoreCategory {
@@ -35,114 +13,7 @@ export interface LoreCategory {
   pages: LorePage[]
 }
 
-export interface SiteData {
-  bannedItems: string[]
-  bannedAttitudes: string[]
-  bannedEnchantments: string[]
-  bannedSpells: string[]
-  bannedMods: string[]
-  serverRules: Rule[]
-  roleplayRules: Rule[]
-  minecraftRules: Rule[]
-  forms: FormEntry[]
-  ideas: Idea[]
-  lore: LoreCategory[]
-}
-
-const STORAGE_KEY = "lumen-site-data"
-
-const defaultData: SiteData = {
-  bannedItems: [
-    "Magia - Abyssal Blast", "Aegis Wine", "Black Sun Sword", "Coin Minting Machine",
-    "Cross Necklace", "Crystal Heart", "Dimensional Carver", "Draconic Twinsword",
-    "Eiswein", "Encantamento - Disarming", "Enderic Railgun", "Ferricore Ingot",
-    "Ignitium Boots", "Ignitium Chestplate", "Ignitium Elytra Chestplate",
-    "Ignitium Helmet", "Ignitium Leggings", "Magia - Invisibility",
-    "Longsword of the Plague", "Magenta", "Meat Shredder", "Mellohi Wine",
-    "Apple Wine", "Mortuth", "Netherfused Gem - Radiance", "Runefused Gem - Immolation",
-    "Shattered Dimensional Carver", "Transmutation Table", "Erdrick's Sword",
-    "Transmuting Elixir", "Oakskin Elixir", "Greater Oakskin Elixir",
-    "Master Sword - em lore e pvp", "Gram", "Sigmun", "Trash Bag", "Chunk Loader (Kibe)",
-  ],
-  bannedAttitudes: [
-    "Invisiblidade em eventos", "Charm of Shrinking em eventos",
-    "Qualquer vinho a partir do nível um", "Entrar em qualquer dimensão sem permissão",
-    "Criar ou duplicar moedas do Lightman's Currency",
-    "Teleportar por waystones utilizando barcos", "Criar times do FTB Teams",
-    "Pegar bosses em lassos do Kibe",
-  ],
-  bannedEnchantments: ["Disarming"],
-  bannedSpells: ["Abyssal Blast"],
-  bannedMods: ["Just Dire Things", "Simply Swords (só ferramentas únicas)", "Chunk Loader"],
-  serverRules: [
-    { id: "s1", title: "1. Discriminação", text: "É estritamente proibido qualquer tipo de preconceito no servidor, seja racismo, homofobia, xenofobia, intolerância religiosa, entre outros." },
-    { id: "s2", title: "2. Respeito", text: "Pedimos para todos os membros que não desrespeitem ninguém, trate todos como você gostaria de ser tratado, sem discriminar ou ofender alguém." },
-    { id: "s3", title: "3. Assédio", text: "Qualquer tipo de assédio, perseguição, intimidação, ou mesmo, abuso é inadmissível em nosso servidor." },
-    { id: "s4", title: "4. Discussões", text: "Evite causar discussões, brigas, ou algo semelhante, afinal estamos aqui para jogar e nos divertir, e não para causar intriga." },
-    { id: "s5", title: "5. Ameaças", text: "É intolerável qualquer tipo de ameaça, ataque pessoal, provocação, acusação falsa ou semelhante." },
-    { id: "s6", title: "6. Doxxing", text: "Não compartilhe dados pessoais de outros usuários sem permissão, seja foto do rosto, nome, entre outros." },
-    { id: "s7", title: "7. Spam", text: "Golpes, fraudes, spam, divulgações sem permissão ou coisa do gênero é proibido em nosso servidor." },
-    { id: "s8", title: "8. Links", text: "Não envie links maliciosos que possam, conter malwares, spywares ou semelhantes, você não gostaria de receber um link desse gênero." },
-    { id: "s9", title: "9. Conteúdo", text: "Nenhum conteúdo NSFW deve ser compartilhado no servidor, seja gore, pornografia ou qualquer outro tipo de material perturbador; também se encaixa nessa diretriz, assuntos como, drogas ilegais, armas reais, etc." },
-    { id: "s10", title: "10. Flood", text: "Não spamme ou floode mensagens em bate-papos, são atitudes que incomodam e atrapalham a conversa ou jogatina." },
-    { id: "s11", title: "11. Comportamentos", text: "Seja comportado, não pratique atos que prejudiquem a experiência dos usuários (por exemplo, spawnkill)." },
-    { id: "s12", title: "12. Incentivo", text: "Não pratique e não incentive ódio, violência, extremismo, ou qualquer outra coisa que \"não seja legal\"." },
-    { id: "s13", title: "13. Assuntos", text: "Evite comentar sobre assuntos que possam provocar gatilhos em algumas pessoas." },
-    { id: "s14", title: "14. Cheats", text: "Qualquer tipo de cheat, programas externos que oferecem vantagem ao jogador, ou mesmo scripts maliciosos não são permitidos." },
-    { id: "s15", title: "15. Colaboração", text: "Respeite as regras de eventos, horários de roleplay e lore, ou semelhantes." },
-    { id: "s16", title: "16. Trapaças", text: "Não tente procurar bugs ou falhas, mantenha o espírito da diversão." },
-    { id: "s17", title: "17. Instruções", text: "Siga as instruções dadas pelos moderadores ou administradores do servidor, seja em eventos, momentos de roleplay ou semelhantes." },
-    { id: "s18", title: "18. Ações Perturbadoras", text: "Qualquer outra atitude considerada assustadora, irritante ou repetitiva pelos usuários, pode se encaixar nesta diretriz." },
-  ],
-  roleplayRules: [
-    { id: "r1", title: "1. Hard-RP", text: "Siga o roleplay o tempo todo, independente das circunstâncias." },
-    { id: "r2", title: "2. Interpretação", text: "Se você criou um personagem, você deve interpretá-lo da forma que ele é ou age." },
-    { id: "r3", title: "3. Metagaming", text: "Não utilize informações externas dentro do roleplay e nem conte sobre o roleplay fora, exemplo: \"mandaram o nome de uma entidade no chat geral do Discord, eu sei, mas meu personagem não\" ou \"estou numa chamada com um amigo, não posso falar informações do roleplay para ele\"" },
-    { id: "r4", title: "4. Random Death Match (RDM)", text: "Não mate jogadores, ou semelhantes sem razão aparente na lore." },
-    { id: "r5", title: "5. Autonomia", text: "Na vida real você não chama um \"administrador\" para resolver seus problemas, o mesmo vale aqui, se precisar de algo, abra um ticket de atendimento em nosso servidor do Discord." },
-    { id: "r6", title: "6. Preservação", text: "Mesmo em um ambiente onde a morte não é definitiva, a vida continua sendo algo precioso. Tratar a própria existência com descuido, se jogando em perigo sem motivo ou ignorando o instinto de sobrevivência, demonstra falta de respeito às regras do mundo." },
-    { id: "r7", title: "7. Dark-rp", text: "Não faça dark-rp em nenhuma circunstância, ou seja, roleplays que tratam de assuntos muito pesados." },
-    { id: "r8", title: "8. Itens de Lore", text: "Livros, itens da lore encontrados no local, devem permanecer lá, é permitido pegar os livros para ler na hora, se quiser, copiá-los, mas sempre devolver aonde encontrou." },
-  ],
-  minecraftRules: [
-    { id: "m1", title: "1. Lag", text: "Qualquer coisa que cause lag ou crashs no servidor será destruído sem aviso prévio, sejam máquinas, rituais, entre outros." },
-    { id: "m2", title: "2. Construções", text: "Não destrua construções que sejam pertencentes a lore ou a outros jogadores." },
-    { id: "m3", title: "3. Roubo", text: "Não roube os jogadores, entidades ou mesmo as casas dos jogadores." },
-    { id: "m4", title: "4. Modelos", text: "Não utilize modelos ou skins sem autorização da administração do servidor." },
-    { id: "m5", title: "5. Waystones", text: "Não use barcos, ou qualquer outro bug para teletransportar mais de um jogador entre as waystones." },
-    { id: "m6", title: "6. Inatividade", text: "Se passar mais de uma semana sem entrar no servidor, você será automaticamente desclassificado e todo o seu progresso e lore serão apagados; na lore seu personagem será dado como morto e você terá de criar um novo com outra história, personalidade e nome. Se você precisar ficar inativo por mais de sete dias, independente do motivo, avise no canal ausência em nosso servidor do Discord." },
-    { id: "m7", title: "7. Vida", text: "Não ultrapasse sessenta corações de vida (três barras)." },
-    { id: "m8", title: "8. \"Abuso\"", text: "Não use bugs ao seu favor ou tente descobrir a identidade dos filhotes ou moderadores/administradores; e se descobrir a identidade, guarde para você, não espalhe." },
-    { id: "m9", title: "9. Placas & Livros", text: "Não edite placas ou livros pertencentes a lore; também evite deixar muitas placas por aí." },
-  ],
-  forms: [
-    {
-      id: "f1",
-      title: "Formulário de Inscrição de Jogador",
-      description: "Formulário para tornar-se um jogador (andarilho) no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/tKXWh3gYeN7XQfB36",
-      requirements: ["Formulário aprovado pelos administradores;", "14 anos ou mais."],
-    },
-    {
-      id: "f2",
-      title: "Formulário de Inscrição de Staff",
-      description: "Formulário para tornar-se um staff no servidor",
-      status: "Disponível",
-      link: "https://forms.gle/1CghL7KTVyPJMTZ69",
-      requirements: ["Formulário aprovado pelos administradores;", "15 anos ou mais."],
-    },
-    {
-      id: "f3",
-      title: "Formulário de Inscrição de Filhote",
-      description: "Formulário para tornar-se um filhote (ovo) no servidor",
-      status: "Indisponível",
-      link: "https://forms.gle/B73qY4GDzAP9Kqxr6",
-      requirements: ["Formulário aprovado pelos administradores;", "15 anos ou mais."],
-    },
-  ],
-  ideas: [],
-  lore: [
+export const loreCategories: LoreCategory[] = [
   {
     id: "principios",
     label: "Princípios",
@@ -150,7 +21,7 @@ const defaultData: SiteData = {
       {
         id: "origem",
         title: "Origem",
-        paragraphs: [
+        content: [
           "Em um dos incontáveis mundos espalhados pelo universo, existia Lumen. Sobre ele velavam dois guardiões de natureza quase divina: Auriel, cuja presença se fazia sentir no calor do sol, e Luriel, cujo silêncio habitava a face da lua. Nenhum dos dois possuía poder suficiente para tocar o mundo material de forma direta; sua influência chegava como a luz filtrada pela fresta de uma janela fechada — em sonhos, em intuições, em certezas inexplicáveis que vinham de lugar nenhum.",
           "Lumen era habitado por dois grandes reinos: Altamar e Olímpia. Por mais de seiscentos anos, coexistiram em paz. No seiscentésimo e quarto ano dessa paz, ela terminou.",
           "O que começou como uma disputa por terras num período de escassez cresceu até consumir gerações. Os recursos rareavam — minério, madeira, tudo o que sustenta uma civilização. Parte dessa escassez não era apenas natural: a Teia, a energia que percorre Lumen como sangue percorre um corpo, havia sido gasta em muitas regiões de ambos os reinos — por uso irresponsável da magia, por décadas de sofrimento acumulado, por conflitos internos que antecederam a grande guerra. Terras exauridas, incapazes de devolver o que antes davam.",
@@ -171,7 +42,7 @@ const defaultData: SiteData = {
       {
         id: "mundo-lumen",
         title: "Mundo: Lumen",
-        paragraphs: [
+        content: [
           "Lumen é um mundo de proporções que excedem qualquer escala comum — seu diâmetro de aproximadamente 130.000 quilômetros o torna vastamente maior do que planetas ordinários. E ainda assim, de toda essa imensidão, apenas uma fração foi jamais tocada por olhos civilizados: cerca de um quinto do que o planeta verdadeiramente é. O restante permanece além — não inexplorado por falta de curiosidade, mas por força de barreiras que a natureza ergueu com aparente intenção. Oceanos sem litoral visível. Tempestades que não se dissipam. Regiões onde a própria magia se comporta de forma hostil a qualquer presença viva.",
           "Abaixo de toda superfície, dentro de toda pedra, permeando toda água e todo ar, existe uma rede invisível de energia chamada de A Teia. É o sistema nervoso do planeta: a corrente que conecta toda vida a toda outra vida, e toda vida ao chão sob ela.",
           "A Teia não é estática. Ela flui, pulsa, adensa-se em certas regiões e afina-se em outras. Onde é densa, a natureza floresce de formas que surpreendem até quem já viu muito. Onde é fraca, a terra ressente. Onde foi destruída, o silêncio que fica é diferente do silêncio comum — é a ausência de algo que deveria estar presente, e qualquer ser sensível o percebe.",
@@ -189,7 +60,7 @@ const defaultData: SiteData = {
       {
         id: "teia",
         title: "Teia",
-        paragraphs: [
+        content: [
           "A Teia é uma estrutura física, invisível e onipresente que funciona como o sistema nervoso e circulatório do planeta Lumen, interconectando toda forma de vida e vinculando cada elemento diretamente ao solo. Sua distribuição pelo mundo não é uniforme, de modo que nas regiões onde ela é mais densa a natureza floresce com uma vitalidade exuberante, enquanto nas áreas onde enfraquece a terra ressente-se e torna-se estéril. Nos piores cenários, onde a estrutura foi efetivamente destruída, instala-se um silêncio artificial e angustiante, marcado pela ausência absoluta do que deveria estar ali.",
           "Quase todos os seres vivos em Lumen possuem alguma sensibilidade a essa rede. A população geral a percebe de forma sutil através de formigamentos, variações na pressão do ar ou intuições repentinas, mas indivíduos disciplinados chamados Tecedores, ou Magos, aprendem a usar a própria magia, material fornecido pela Teia. No topo dessa hierarquia estão os Tecedores-Mestre, a elite dos manipuladores que agem como guardiões do equilíbrio, ditando os limites éticos do que pode e não pode ser feito com essa energia.",
           "Além de ser uma fonte de poder, a Teia funciona como a barreira mística fundamental que separa o mundo material do Além, o plano para onde vão as almas dos mortos e onde habitam forças que nunca pertenceram aos vivos. Quando a Teia está saudável, essa barreira permanece sólida e mantém cada plano em seu devido lugar, mas quando ela se fragmenta devido a feitiçarias irresponsáveis, sofrimento coletivo, sentimentos negativos ou destruição deliberada, a fronteira afina e gera rachaduras na realidade.",
@@ -205,7 +76,7 @@ const defaultData: SiteData = {
       {
         id: "auriel",
         title: "Auriel",
-        paragraphs: [
+        content: [
           "Nos primórdios de Lumen, antes mesmo que os primeiros reinos erguessem suas fundações de pedra, Auriel se manifestou como a personificação do dia, da ação e da vitalidade. Ele era o guardião cuja presença se fazia notar no calor do sol que alimentava as colheitas e aquecia a terra. Sendo uma entidade de natureza quase divina, Auriel não possuía a capacidade de intervir fisicamente ou moldar a matéria com as próprias mãos; seu poder operava nas frestas da consciência mortal. Ele era a voz que soprava o otimismo nos corações desesperados, a intuição que guiava os descobridores e a certeza inexplicável que preenchia os homens justos quando precisavam tomar decisões difíceis.",
           "Durante os seiscentos anos de paz entre Altamar e Olímpia, Auriel atuou como o motor do progresso e da justiça. Ele inspirava os reis a governarem com generosidade e os magos a utilizarem a Teia para a cura e a construção. No entanto, quando o Cataclismo fraturou o mundo no seiscentésimo e quarto ano, o guardião do sol sentiu cada gota de sangue derramada no Vale do Fim como uma queimadura em sua própria essência. Ver a Teia ser gasta pelo uso irresponsável da magia e pelo egoísmo humano feriu sua natureza de doador da vida. Diante da iminente extinção da inocência no mundo, Auriel percebeu que a humanidade precisava de um recomeço, o que o levou a quebrar seu isolamento milenar para arquitetar o êxodo rumo ao norte.",
           "Ao lado de Luriel, Auriel derramou suas últimas forças ativas sobre os sonhos daqueles que ainda portavam corações íntegros. Ele soprou visões de um porto seguro e de um mar calmo, impulsionando a jornada que daria origem ao Reino de Luanda. Contudo, a derrocada de Luanda e a profanação da torre maldita trouxeram um luto profundo ao guardião. Ao ver o Submundo de Azrael estender suas garras sobre os seus protegidos, Auriel recolheu sua influência direta, restando-lhe apenas observar, com dor silenciosa, o momento em que o rei desesperado rasgaria a realidade para buscar salvação na Terra.",
@@ -214,7 +85,7 @@ const defaultData: SiteData = {
       {
         id: "luriel",
         title: "Luriel",
-        paragraphs: [
+        content: [
           "Luriel nasceu do repouso e do mistério, a contraparte exata e necessária ao calor de seu irmão. Sua presença habitava a face da lua, o manto da noite e o silêncio que se instala sobre o mundo quando o barulho dos vivos cessa. Se Auriel inspirava a ação e o avanço, Luriel era o guardião da introspecção, dos segredos guardados e da sabedoria oculta. Sem poder tocar o plano material diretamente, a influência de Luriel chegava aos mortais através do tecido sutil dos sonhos profundos, das revelações silenciosas que surgiam na calada da noite e da paz espiritual que acalmava as mentes atribuladas antes do descanso.",
           "Por séculos, Luriel observou o Nexo de Ouro e os reinos de Lumen a partir de sua perspectiva eterna e distante. Ele compreendia que a escuridão não era o mal, mas o espaço necessário para a regeneração da Teia. Quando o Cataclismo começou e a magia corrompida passou a rasgar a energia vital do planeta, Luriel testemunhou o pior tipo de treva: o esgotamento da alma do mundo. As noites no Vale do Fim deixaram de ser momentos de paz e tornaram-se vigílias de agonia e assombrações. Percebendo que o ciclo natural de Lumen havia sido quebrado pela ganância de Altamar e Olímpia, o guardião da lua aceitou que a única forma de preservar a beleza da criação seria ocultando uma centelha dela onde ninguém pudesse encontrar.",
           "Unindo seu silêncio à vibração de Auriel, Luriel teceu o véu invisível que escondeu a ilha do extremo norte dos mapas e das mentes dos homens corruptos. Foi ele quem guiou a nau vazia pelas águas perigosas, usando as correntes marítimas e a luz do luar para proteger os escolhidos até Luanda. Quando a invasão continental quebrou o isolamento e o ritual necromântico ancorou uma alma hostil na ilha, Luriel sentiu o apodrecimento da noite de Luanda. Diante da tragédia, o guardião recolheu-se ao seu silêncio mais profundo, incapaz de impedir o colapso, mas assistindo à abertura das fendas cósmicas como o último ato de resistência de uma linhagem que ele mesmo ajudou a salvar.",
@@ -223,7 +94,7 @@ const defaultData: SiteData = {
       {
         id: "azrael",
         title: "Azrael",
-        paragraphs: [
+        content: [
           "Antes de se tornar o monarca absoluto do Submundo, Azrael foi uma das existências mais antigas de Lumen, um ser de natureza grandiosa que caminhava ao lado de Auriel e Luriel. Na aurora dos tempos, ele não governava as sombras, mas atuava como o tecelão dos ciclos do universo, o guardião encarregado de recolher o sopro vital dos mortais e garantir que suas almas fizessem a transição pacífica através da Teia. Ele era uma entidade de justiça e equilíbrio, uma força necessária que compreendia a mortalidade como parte da harmonia do cosmos, respeitado tanto pelo calor do sol quanto pelo silêncio da lua.",
           "No entanto, a proximidade constante com o fim das coisas começou a transformar a mente de Azrael. Ao testemunhar eras de mortais que desperdiçavam suas existências com ganância, traições e violência — os primeiros sinais do que séculos mais tarde se tornaria o Cataclismo —, ele passou a enxergar o livre-arbítrio não como uma dádiva, mas como uma falha de criação. Azrael começou a questionar por que almas tão propensas ao caos deveriam retornar à Teia para reencarnar e errar novamente. Ele passou a acreditar que a verdadeira paz só seria alcançada através do controle absoluto, onde nenhuma alma teria a liberdade de falhar.",
           "Essa mudança de pensamento o colocou em rota de colisão direta com Auriel e Luriel. Quando Azrael tentou subjugar à força os espíritos dos primeiros mortais caídos para testar sua doutrina de obediência cega, os outros guardiões intervieram. O conflito que se seguiu não foi travado com espadas, mas com pura vontade metafísica. Julgado como uma ameaça à ordem natural do universo, Azrael foi banido da realidade de Lumen. Ele foi lançado para fora da Teia, exilado em uma dimensão desconhecida e completamente desconectada do mundo material, conhecida antes como Reino das Almas.",
@@ -233,7 +104,7 @@ const defaultData: SiteData = {
       {
         id: "apollo",
         title: "Apollo",
-        paragraphs: [
+        content: [
           "Antes de carregar o peso de um reino em ruínas, Apollo foi um príncipe moldado pela própria essência de Luanda. Nascido da linhagem direta dos primeiros líderes escolhidos pelos guardiões, ele era filho do Rei Selenor e da Rainha Aurora. Seus pais governavam não pelo medo, mas pela devoção mútua e pelo respeito à Teia. O casamento deles era visto como o reflexo perfeito da união entre Auriel e Luriel: Selenor possuía a serenidade e a firmeza da lua, enquanto Aurora carregava a vivacidade e o calor do sol. Foi nesse ambiente de profundo afeto, estabilidade e reverência espiritual que Apollo cresceu, sendo educado para ser o elo definitivo entre seu povo e as divindades que os protegiam.",
           "Sua infância e adolescência foram vividas sob o teto de um palácio. Desde cedo, Apollo demonstrou uma sensibilidade incomum à Teia, a energia vital do mundo. Seus pais, percebendo o potencial do jovem, confiaram sua educação aos mais sábios sacerdotes da ilha. Longe dos campos de batalha e das cicatrizes que consumiam o resto de Lumen, o passado de Apollo foi preenchido por longos dias de estudo nas grandes bibliotecas, aprendizado de alta magia na academia de Luanda e longas caminhadas pelas florestas intocadas. Ele cresceu acreditando piamente que o isolamento de Luanda era um desígnio sagrado e que sua única missão na vida seria perpetuar aquela harmonia eterna.",
           "No entanto, a criação impecável e o amor superprotetor de seus pais também moldaram a maior fraqueza de Apollo: a total ingenuidade perante a maldade humana. O jovem príncipe nunca conheceu a escassez, a traição ou a dor da perda. Para ele, o Cataclismo que ocorria além dos oceanos era apenas uma abstração teórica, um erro de cálculo de povos que não sabiam amar os guardiões. Quando Selenor e Aurora faleceram de velhice natural, deixando a coroa nas mãos de um jovem e idealista Apollo, eles o entregaram um reino perfeito, mas um espírito despreparado para a escuridão. O passado de paz e privilégios de Apollo foi, ironicamente, o que tornou o choque da futura invasão tão devastador, transformando o menino criado no paraíso em um homem que, mais tarde, romperia as barreiras do próprio universo por puro desespero.",
@@ -242,7 +113,7 @@ const defaultData: SiteData = {
       {
         id: "tadeu",
         title: "Tadeu",
-        paragraphs: [
+        content: [
           "Tadeu é um homem de presença imponente, cuja brutalidade e força física refletem de maneira cristalina os seus aproximadamente cinquenta anos de existência, todos moldados pelo calor excruciante das forjas e pela escuridão opressiva das minas. Tadeu desde criança já buscava recursos para tentar criar algo com a fúria de quem precisava garantir a sobrevivência de sua comunidade, isolando-se nas cavernas mais remotas de Luanda para extrair os recursos que essa terra ainda era capaz de oferecer.",
           "Sua história é a de um sobrevivente impiedoso, cujas mãos calejadas guardam o peso de um trabalho ininterrupto. Embora não tenha o dom de manipular a energia como os Tecedores, sua profunda familiaridade com as rochas lhe concedeu uma intuição singular. Esse dom velado permite-lhe forjar peças que respeitam a integridade do material e o fluxo invisível de energia do planeta, criando equipamentos extraordinários ou até mesmo, ligados a alma de alguém. Seu temperamento bruto e vocabulário ríspido, muitas vezes interpretados como insensibilidade, escondem uma vida de perdas e uma resiliência inabalável. Hoje, ele atua como o ferreiro mais formidável e confiável da região, fabricando armas, armaduras, ornamentos e tudo que há de possível com metais.",
         ],
@@ -250,7 +121,7 @@ const defaultData: SiteData = {
       {
         id: "barnabe",
         title: "Seu Barnabé",
-        paragraphs: [
+        content: [
           "O venerável curandeiro espiritual conhecido como Seu Barnabé é uma figura cercada de misticismo e reverência em Luanda, ostentando uma idade que já se aproxima de seus oitenta anos. Ao longo de décadas de dedicação silenciosa, ele desenvolveu uma compreensão profunda sobre a Teia, a estrutura física e invisível que atua como o sistema nervoso de Lumen e conecta todas as formas de vida. Barnabé especializou-se na manipulação de ervas, compreendendo cada uma e suas utilidades. Utilizando seus conhecimentos empíricos, ele dedica seus dias a aliviar o sofrimento do povo, ajudando com doenças, dores e semelhantes.",
           "No entanto, sua verdadeira genialidade e periculosidade residem no obscuro campo das maldições. Barnabé compreende perfeitamente que as maldições verdadeiras são, em sua essência, entidades e almas do Além que acabaram ancoradas no mundo físico devido às rachaduras geradas na Teia. Com sua sabedoria, ele desenvolveu métodos complexos para tentar desfazer maldições, mas hoje não são mais eficientes como no passado. Contudo, é um segredo guardado nas profundezas de sua mente que esse vasto conhecimento não serve unicamente para a cura. Ele conhece as minúcias de como essas obras malignas funcionam a ponto de, possivelmente, ser capaz de criar suas próprias maldições — um poder profano que ele prefere manter oculto de todos, temendo a perseguição dos magos e as consequências catastróficas que isso traria ao já fragilizado equilíbrio de Lumen.",
         ],
@@ -258,7 +129,7 @@ const defaultData: SiteData = {
       {
         id: "celine",
         title: "Celine",
-        paragraphs: [
+        content: [
           "Apesar de sua tenra juventude, aos dezenove anos, Celine é reverenciada com o prestigioso título de Diretora de Magia de Luanda, integrando a autoritária elite dos manipuladores de magia no Reino de Luanda. Desde a mais tenra infância, ela demonstrou uma afinidade prodigiosa com a Teia, sentindo a sua presença não apenas de forma sutil, mas através de severas variações na pressão do ar e formigamentos intensos que a guiavam como certezas absolutas. Ao invés de ceder à arrogância que tamanho talento natural poderia trazer, Celine dedicou sua vida ao estudo rigoroso e disciplinado dessa energia, compreendendo que a Teia atua como a barreira mística fundamental que separa o mundo material das forças e almas do Além. Essa compreensão a fez assumir para si a imensa responsabilidade de ditar os limites éticos e morais do que pode ou não ser feito com a magia em todo o reino.",
           "Consciente de que a feitiçaria irresponsável e a destruição deliberada afinam e fragmentam a Teia, permitindo que forças caóticas invadam o mundo físico, ela tomou para si o fardo da instrução. Em suas aulas e na regulação das leis mágicas de Luanda, Celine ensina com disciplina férrea que a energia do mundo deve ser tratada como um organismo vivo, exigindo respeito e cautela para não causar danos irreversíveis às camadas invisíveis da existência. Celine consegue usar magias impressionantes, podendo ser considerada uma das maiores feiticeiras da história de Lumen. Sua história pessoal é marcada pela renúncia de uma juventude comum em prol de um dever maior. Com uma postura implacável e uma sabedoria que contrasta fortemente com sua idade, Celine busca garantir que a nova geração de magos jamais repita os erros do passado que levaram o restante do planeta à ruína, agindo como o mais firme pilar da ordem mágica entre os sobreviventes de Luanda.",
         ],
@@ -266,7 +137,7 @@ const defaultData: SiteData = {
       {
         id: "almas",
         title: "Almas",
-        paragraphs: [
+        content: [
           "As almas que dividem-se em duas categorias fundamentais, duas naturezas que definem sua essência e propósito.",
           "As Almas Benditas são aquelas que fluem em harmonia com a existência. São seres que buscam apoiar os encarnados, que encontram significado em auxiliar e ser auxiliados. Elas não conhecem rancor, apenas o desejo de servir e de conectar-se com aqueles que ainda possuem forma. Algumas permanecem próximas aos vivos, guiando-os em momentos de incerteza. Outras buscam encontrar seu próprio caminho através da benevolência que oferecem.",
           "As Almas Malditas, por sua vez, são aquelas presas à escuridão. Muitas são confinadas ao que alguns chamam de Inferno, aprisionadas pelas correntes de Azrael, aquele que guarda o Reino das Almas, o Rei desse ambiente. Essas almas não encontram paz. São atormentadas pela própria natureza, e essa angústia as leva a incomodar os encarnados, a perturbar sua paz, a atrapalhar seus caminhos. Elas espalham confusão e desassossego, como se a própria desgraça que as cerca precisasse ser compartilhada.",
@@ -281,7 +152,7 @@ const defaultData: SiteData = {
       {
         id: "luanda",
         title: "Luanda",
-        paragraphs: [
+        content: [
           "Luanda não nasceu da expansão territorial, mas de um ato de misericórdia divina no quingentésimo terceiro ano antes de sua queda. Enquanto o continente de Lumen se afogava no início do Cataclismo, os guardiões Auriel e Luriel uniram suas forças remanescentes para salvar uma fagulha da humanidade que ainda preservava a integridade espiritual. Através de sonhos e pressentimentos, os escolhidos foram conduzidos a um porto misterioso e embarcaram em uma nau que navegou sem tripulação rumo ao desconhecido. O destino era uma ilha colossal no extremo norte, oculta além do mapa do mundo conhecido — que correspondia a apenas um quinto da verdadeira extensão de Lumen. Ali, cercados por águas intransponíveis e protegidos pelo isolamento, os sobreviventes fundaram o Reino de Luanda, elegendo uma linhagem real para governar sob as bênçãos do sol e da lua.",
           "Por duzentos e sessenta anos, Luanda floresceu como um espelho de perfeição em meio ao caos universal. A Teia, a energia vital do mundo que havia sido exaurida e corrompida no continente pela magia irresponsável e pela guerra entre Altamar e Olímpia, permaneceu pura e pulsante no solo da ilha. Para os habitantes da ilha, a fome, a peste e o ódio eram conceitos abstratos de histórias antigas; eles viviam em um ecossistema autossustentável de paz absoluta, alheios ao fato de que o resto do planeta ardia em cinzas.",
           "A era de ouro da ilha encontrou seu fim trágico no momento exato em que o isolamento foi quebrado. Navegadores do continente, expandindo suas buscas por recursos escassos, finalmente cruzaram as fronteiras proibidas e avistaram a opulência de Luanda. A descoberta gerou um impacto sem precedentes: a visão daquele paraíso intacto uniu os inimigos históricos, Altamar e Olímpia, em um sentimento mútuo de profundo ressentimento. Para as nações do continente, a existência de Luanda era a prova viva de que os guardiões possuíam \"favoritos\" e os haviam abandonado à própria sorte por séculos. Movidos por uma inveja avassaladora e pelo ódio acumulado de gerações, os reinos invasores decidiram que se eles não podiam ter o paraíso, Luanda também não teria.",
@@ -291,7 +162,7 @@ const defaultData: SiteData = {
       {
         id: "vale-do-fim",
         title: "Vale do Fim",
-        paragraphs: [
+        content: [
           "O Vale do Fim nem sempre carregou esse nome fúnebre. Localizado exatamente na linha equatorial de Lumen — uma vasta faixa de terra que geograficamente equivaleria à Europa e às zonas centrais da Terra —, a região era conhecida no passado como o Nexo de Ouro. Era o coração pulsante do planeta, um corredor verdejante de florestas densas, rios colossais e cadeias de montanhas ricas em minérios. Por se situar bem na fronteira natural entre Altamar e Olímpia, o vale funcionou durante os seiscentos anos de paz como o grande entreposto comercial e cultural do mundo, o ponto exato onde as duas potências se cruzavam para prosperar juntas sob a neutralidade garantida pela Teia abundante.",
           "A transformação do nexo em um cenário de horror começou no seiscentésimo e quarto ano da paz, quando a escassez de recursos desencadeou o Cataclismo. Por sua posição central e estratégica, a região tornou-se o tabuleiro principal da guerra bi-secular. O que começou com disputas por minas e colheitas evoluiu para uma campanha de terra arrasada. Décadas de bombardeios mágicos irresponsáveis, canalizações forçadas da Teia para alimentar feitiços de destruição em massa e o sangue de milhões de soldados soterrados reviraram o solo. A energia vital da terra foi violentada a ponto de o ecossistema colapsar por completo, transformando florestas luxuriantes em desertos de poeira cinzenta e rios em canais de lama e resíduos alquímicos.",
           "Hoje, o Vale do Fim é uma gigantesca trincheira planetária que racha o meio de Lumen. A atmosfera ali é permanentemente cinzenta, sufocada pela fuligem de conflitos que nunca cessam por completo e pelos resquícios de magias instáveis que distorcem a gravidade e o clima. Não há dia ou noite claros no vale; a luz do sol de Auriel e o brilho da lua de Luriel mal conseguem penetrar a barreira de fumaça estagnada. A terra tornou-se totalmente estéril, incapaz de germinar uma única semente, forçando os exércitos de Altamar e Olímpia a dependerem inteiramente de linhas de suprimento externas para continuar enviando contingentes para a morte.",
@@ -301,7 +172,7 @@ const defaultData: SiteData = {
       {
         id: "reino-das-almas",
         title: "Reino das Almas",
-        paragraphs: [
+        content: [
           "O Reino das Almas, conhecido popularmente entre os mortais de Lumen como o Inferno, não faz parte do plano físico e nem compartilha da energia da Teia que sustenta o planeta. Ele é uma dimensão completamente isolada, um universo de densidade, sombras e silêncio sepulcral que existe à margem da realidade viva. Geograficamente, o reino não possui relevo natural, vegetação ou oceanos; erguido inteiramente pelo rancor e pela força de vontade de seu criador e monarca absoluto, Azrael.",
           "A fundação desse plano dimensional ocorreu após o banimento de Azrael da realidade de Lumen. Condenado ao vazio eterno por Auriel e Luriel devido à sua tentativa de erradicar o livre-arbítrio dos mortais, o antigo guardião utilizou seu imenso poder cósmico para transformar o nada em um império de retribuição e controle. O Reino das Almas foi desenhado para ser o avesso perfeito de Lumen: enquanto o mundo dos vivos celebra o caos da escolha e a imperfeição, o submundo opera sob uma ordem matemática, fria e absolutamente inquebrável. É o destino final de todas as almas que partem de Lumen carregadas de corrupção, ódio ou que foram vinculadas a pactos obscuros.",
           "O coração do reino é sustentado pelas correntes metafísicas de Azrael. Diferente de Lumen, onde os espíritos transitam livremente pela Teia para fazer a passagem, no Reino das Almas o livre-arbítrio é sumariamente extinto na entrada. As almas que cruzam os portões dessa dimensão são acorrentadas ao trono do monarca, sofrendo uma reconfiguração espiritual que as obriga a manter 100% de fidelidade a Azrael por toda a eternidade. No Inferno, não existem rebeliões, dissidências ou falhas: bilhões de espíritos outrora orgulhosos marcham em uníssono, trabalhando na manutenção da infraestrutura sombria do plano ou servindo como uma bateria eterna de energia espiritual para o rei.",
@@ -317,7 +188,7 @@ const defaultData: SiteData = {
       {
         id: "filhos-de-lumen",
         title: "Filhos de Lumen",
-        paragraphs: [
+        content: [
           "A criação das crianças, conhecidas como os Filhos de Lumen, foi o desfecho de uma necessidade existencial profunda de Auriel e Luriel, os guardiões de Luanda. Após a fundação da ilha, os seres primordiais compreenderam que a sua observação secular do mundo os tornara distantes demais do plano material, reduzindo-os a presenças etéreas, meras vozes em sonhos e intuições desprovidas de substância. Para ancorarem-se à realidade e garantirem a perenidade de sua proteção, os guardiões sacrificaram fragmentos de suas próprias essências, moldando oito seres materiais. Optaram, por escolha deliberada, que estas crianças mantivessem permanentemente a aparência e o comportamento de quatro anos de idade, preservando nelas uma pureza imaculada que o tempo e a fadiga do mundo seriam capazes de corromper.",
           "O vínculo estabelecido com esses seres foi inédito na história da existência dos guardiões, pois, por meio das crianças, eles passaram a experimentar o plano material de forma sensorial. Tudo o que cada criança sentia, os guardiões igualmente sentiam, transformando os Filhos de Lumen em uma janela real para o mundo vivo. Contudo, essa nova capacidade trouxe consigo uma vulnerabilidade desconhecida até então: a possibilidade de sofrer pela iminência da perda. Distribuídas entre famílias selecionadas pela integridade de seus lares, as crianças cresceram integradas à rotina da ilha, tornando-se elementos vitais que conferiam uma aura de vivacidade atemporal a Luanda.",
           "A ameaça à estabilidade do reino surgiu quando a entidade maldita foi ancorada ao solo da ilha, desencadeando um processo de corrupção que impactou diretamente a Teia, da qual as crianças são âncoras vivas. À medida que as famílias que as acolhiam sucumbiam ao apodrecimento, Celine e Barnabé perceberam que a entidade não almejava apenas a morte física dos Filhos de Lumen, mas a destruição dos fragmentos divinos que eles carregavam, o que representaria o corte definitivo da conexão entre os guardiões e o mundo. Diante da urgência do colapso, Auriel e Luriel comunicaram a Celine a necessidade de um selo protetor através de um sonho compartilhado. Seguindo as instruções precisas de Barnabé, que compreendia profundamente a língua dos feitiços, ela reuniu as oito crianças e realizou o selo que as lançou ao Além, salvaguardando-as do alcance da força material. Esse procedimento, contudo, foi impiedoso, resultando na anulação total das memórias e da identidade daquelas crianças.",
@@ -334,7 +205,7 @@ const defaultData: SiteData = {
       {
         id: "andarilhos",
         title: "Andarilhos",
-        paragraphs: [
+        content: [
           "Os \"andarilhos\" de Luanda não pertencem a Lumen; eles são nativos de outros universos, planetas ou realidades. Eles eram pessoas comuns — que levavam vidas perfeitamente ordinária. Não eram heróis escolhidos, soldados treinados ou místicos; a única característica que compartilhavam era o fato de estarem em um momento de vulnerabilidade, recolhidos ao silêncio do sono ou testemunhando um clarão inexplicável no céu noturno em suas realidades natais.",
           "Ao serem tragados pelas fendas desesperadas do Rei Apollo, suas existências foram arrancadas de suas camas e de suas linhas temporais sem qualquer aviso ou direito de escolha. O processo de travessia pelo buraco de minhoca desfez temporariamente suas percepções de carne, gravidade, tempo e fome, deixando-os flutuar em um não-lugar até despertarem abruptamente no solo de Luanda. Desorientados, e jogados em uma civilização à beira do colapso, esses humanos tornaram-se os \"Andarilhos\", ou simplesmente, \"Habitantes\" — estrangeiros cósmicos cuja missão inicial era apenas sobreviver, mas que agora carregam o destino de um mundo e a vida de seus novos filhos eternos nas mãos.",
         ],
@@ -348,7 +219,7 @@ const defaultData: SiteData = {
       {
         id: "hierarquia-azrael",
         title: "Hierarquia - Azrael",
-        paragraphs: [
+        content: [
           "Ordem hierárquica do Reino das Almas, do mais baixo para o mais alto posto:",
           "Alma → Comandante → Coronel → General → Rei",
         ],
@@ -356,7 +227,7 @@ const defaultData: SiteData = {
       {
         id: "dusk",
         title: "Dusk (Comandante)",
-        paragraphs: [
+        content: [
           "Nos primeiros séculos do Reino das Almas, quando Azrael ainda aprendia a moldar o vazio segundo sua própria vontade, nasceu Dusk. Não nasceu de uma vida interrompida, não carregou nunca o calor de um corpo nem a lembrança de um céu aberto. Foi tecido a partir da própria substância do Submundo, das correntes metafísicas que sustentam aquele reino, como se fosse um fragmento deliberado do rancor e da ordem que Azrael impôs ao nada.",
           "Por essa razão, Dusk não conhece a resistência que habita tantas outras almas condenadas. Aqueles que chegam ao Reino das Almas trazem consigo memórias de liberdade, e é justamente essa lembrança que as correntes de Azrael precisam sufocar. Dusk jamais teve o que perder. Sua lealdade não nasce de submissão, mas de identidade. Ele não obedece a Azrael como um servo obedece a um senhor; ele concorda com Azrael como uma sombra concorda com a escuridão que a projeta, pois são, em essência, a mesma coisa.",
           "Sua existência inteira transcorreu sob a ausência de luz própria, no silêncio absoluto que precede toda forma, e talvez por isso seu nome tenha sido escolhido com tamanha ironia pelos poucos que ousam pronunciá-lo. Dusk significa o limiar, o instante em que o dia cede lugar à noite, e ainda assim ele jamais testemunhou nem um nem outro. Conhece apenas aquilo que separa as duas coisas, o intervalo vazio onde nenhuma luz alcança e nenhuma escuridão precisa se esconder.",
@@ -369,7 +240,7 @@ const defaultData: SiteData = {
       {
         id: "shito",
         title: "Shito (General)",
-        paragraphs: [
+        content: [
           "Nas brumas imemoriais que antecederam a derrocada do mundo, quando o alvorecer do Cataclismo começava a macular a sagrada Teia de Lumen com o sangue dos reinos de Altamar e Olímpia, forjou-se a lenda de uma alma insubmissa. Dizem os ecos dos esquecidos que, em meio à voragem dos primeiros embates que fraturaram séculos de paz, um homem tombou não com a aceitação do fim, mas com uma fúria inominável e um desejo insaciável de retaliação. Revolto diante da foice da mortalidade e sedento por vingança, este guerreiro rebelou-se na morte e partiu no encalço daquele que, no mundo encarnado, não passava de um mito sussurrado com pavor: Azrael, o antigo guardião banido que forjou do vazio o pavoroso Reino das Almas.",
           "Movido pelas promessas falaciosas de glória e de um poder incomensurável, o espírito entregou-se ao senhor do Submundo. Contudo, a dádiva de Azrael revelou-se um cálice envenenado; em vez da almejada libertação, a alma vingativa encontrou-se enredada nas inexoráveis correntes metafísicas do Inferno, que aprisionam os espíritos e lhes extinguem o livre-arbítrio. Embora o rei das sombras lhe tenha concedido uma força assombrosa, elevando-o à condição de um dos seus generais mais temíveis, este sente o peso invisível das suas amarras. O seu poder, por mais colossal que seja, palpita nas suas veias espirituais como um dom meramente emprestado por Azrael, uma chama majestosa que o limita e o acorrenta ao abismo.",
           "Hoje, essa entidade milenar e terrível caminha por entre as frestas da realidade apresentando-se sob a alcunha de Shito, tendo o seu verdadeiro nome sido apagado pelas areias do tempo. Ostentando uma natureza cinzenta e profundamente enigmática, ele paira no limiar das lealdades. Não se curva com devoção verdadeira aos desígnios opressores de Azrael, tampouco nutre qualquer centelha de simpatia por Luriel e Auriel, os divinos guardiões associados à lua e ao sol. Shito é um espectro de vontade própria, uma força formidável que, sussurram alguns, possui a capacidade latente de quebrar os seus grilhões e de se erguer como uma entidade absolutamente independente.",
@@ -379,7 +250,7 @@ const defaultData: SiteData = {
       {
         id: "florence-delcroix",
         title: "Florence Del'Croix (General)",
-        paragraphs: [
+        content: [
           "Florence nasceu em Altamar num tempo em que já não havia infância fácil para ninguém. O Cataclismo, ainda em seus séculos intermediários, tinha reduzido a cidade a um lugar onde as pessoas discutiam colheitas e mantimentos com a mesma urgência com que outrora discutiam filosofia. Cresceu, portanto, ouvindo disputas sobre terra, sobre comida, sobre quem tinha direito a quê num mundo que já não tinha o suficiente para ninguém. E foi ali, ouvindo essas discussões desde cedo, que nasceu nele uma ideia que jamais o abandonaria: a de que ele próprio era, por natureza, um homem justo.",
           "Não tinha formação alguma. Nunca estudou lei, nunca serviu a tribunal, nunca foi reconhecido por autoridade nenhuma como algo além de um cidadão comum. Ainda assim, gostava de se colocar entre vizinhos em conflito, de mediar pequenas disputas de mercado, de anunciar veredictos que ninguém lhe havia pedido, sempre com a convicção tranquila de quem acredita profundamente na própria integridade. As pessoas o toleravam. Poucas o respeitavam de fato, mas Florence nunca percebeu a diferença entre as duas coisas, porque nunca quis perceber. Era mais confortável acreditar se justo do que examinar, com qualquer honestidade, o que realmente era.",
           "O que realmente era, na prática cotidiana de sua vida, era um homem que vivia sempre à beira da ruína. Não por falta de trabalho ou de oportunidade, mas por um vício que o acompanhava desde a juventude e que nunca conseguiu, ou quis, abandonar: o jogo. Dados, cartas, apostas em qualquer disputa que oferecesse a promessa de sorte. Perdia, quase sempre, o suficiente para nunca sobrar nada, e cada perda era seguida de uma nova aposta, na esperança silenciosa de que a próxima rodada corrigisse a anterior.",
@@ -408,14 +279,14 @@ const defaultData: SiteData = {
       {
         id: "no-canonical",
         title: "Nota: Não Canonical",
-        paragraphs: [
+        content: [
           "As histórias desta categoria são classificadas como \"No Canonical\" (NC) — ou seja, não impactam diretamente na lore principal de Lumen. São contos de folclore transmitidos entre os habitantes do mundo.",
         ],
       },
       {
         id: "meow",
         title: "Meow",
-        paragraphs: [
+        content: [
           "Antes de Altamar e Olímpia, antes mesmo da paz que se contaria depois em séculos, Lumen já era velho. E Meow é mais velho que o nome de qualquer reino que já existiu ali. Ninguém sabe dizer ao certo quando ele viveu — se viveu como homem, como fera, ou como algo que ainda não tinha nome para se descrever. O que se sabe é que ele morreu há tanto tempo que os guardiões que hoje velam sobre Lumen, Auriel e Luriel, já eram velhos quando a alma dele ainda cruzava a Teia à procura de um lugar para descansar. E não descansou.",
           "Por que não seguiu adiante, nenhuma lenda explica igual. Alguns dizem que era teimosia. Outros, que ele viu demais do mundo para deixá-lo. O fato é que, em algum momento perdido nas eras, essa alma antiga escolheu — ou foi condenada, ninguém sabe — a forma de um gato preto, e assim atravessa os séculos, reencarnando ou simplesmente persistindo, ninguém tem certeza de qual das duas.",
           "O que restou de tanto tempo vivo é uma língua afiada e paciência zero. Meow fala como quem já viu esse mesmo erro ser cometido mil vezes antes — porque viu. É sarcástico, grosso, debocha de tudo e de todos, trata reis e mendigos com o mesmo desdém. Mas por baixo disso entende a Teia como ninguém mais vivo entende, porque ele estava lá quando ela ainda não tinha nome, quando os primeiros Tecedores ainda tateavam no escuro tentando entender o que sentiam nas pontas dos dedos. Ele não estudou magia. Ele lembra dela.",
@@ -425,68 +296,4 @@ const defaultData: SiteData = {
       },
     ],
   },
-],
-}
-
-export function loadData(): SiteData {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return structuredClone(defaultData)
-    const parsed = JSON.parse(raw)
-    // merge simples para garantir que campos novos existam mesmo em dados antigos salvos
-    return { ...structuredClone(defaultData), ...parsed }
-  } catch {
-    return structuredClone(defaultData)
-  }
-}
-
-export function saveData(data: SiteData) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
-  // avisa outras partes da mesma aba que os dados mudaram
-  window.dispatchEvent(new Event("lumen-data-updated"))
-}
-
-export function resetData() {
-  localStorage.removeItem(STORAGE_KEY)
-  window.dispatchEvent(new Event("lumen-data-updated"))
-}
-
-// Hook simples para componentes reagirem a mudanças nos dados
-import { useEffect, useState } from "react"
-
-export function useSiteData() {
-  const [data, setData] = useState<SiteData>(loadData)
-
-  useEffect(() => {
-    const handler = () => setData(loadData())
-    window.addEventListener("lumen-data-updated", handler)
-    window.addEventListener("storage", handler)
-    return () => {
-      window.removeEventListener("lumen-data-updated", handler)
-      window.removeEventListener("storage", handler)
-    }
-  }, [])
-
-  return data
-}
-
-// --- Auth simples do dashboard ---
-const AUTH_KEY = "lumen-dashboard-auth"
-const ADMIN_USER = "admin"
-const ADMIN_PASS = "LumenSMP#123"
-
-export function login(user: string, pass: string): boolean {
-  if (user === ADMIN_USER && pass === ADMIN_PASS) {
-    sessionStorage.setItem(AUTH_KEY, "1")
-    return true
-  }
-  return false
-}
-
-export function isAuthenticated(): boolean {
-  return sessionStorage.getItem(AUTH_KEY) === "1"
-}
-
-export function logout() {
-  sessionStorage.removeItem(AUTH_KEY)
-}
+]
