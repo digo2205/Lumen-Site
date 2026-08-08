@@ -472,12 +472,25 @@ export function useSiteData() {
 
 // --- Auth simples do dashboard ---
 const AUTH_KEY = "lumen-dashboard-auth"
-const ADMIN_USER = "admin"
-const ADMIN_PASS = "LumenSMP#123"
+const AUTH_USER_KEY = "lumen-dashboard-user"
+
+interface AccountDef {
+  user: string
+  pass: string
+  // usuários com permissão para editar a lore
+  canEditLore: boolean
+}
+
+const ACCOUNTS: AccountDef[] = [
+  { user: "admin", pass: "LumenSMP#123", canEditLore: false },
+  { user: "Digo", pass: "Eskema19*", canEditLore: true },
+]
 
 export function login(user: string, pass: string): boolean {
-  if (user === ADMIN_USER && pass === ADMIN_PASS) {
+  const account = ACCOUNTS.find((a) => a.user === user && a.pass === pass)
+  if (account) {
     sessionStorage.setItem(AUTH_KEY, "1")
+    sessionStorage.setItem(AUTH_USER_KEY, account.user)
     return true
   }
   return false
@@ -487,6 +500,17 @@ export function isAuthenticated(): boolean {
   return sessionStorage.getItem(AUTH_KEY) === "1"
 }
 
+export function getCurrentUser(): string | null {
+  return sessionStorage.getItem(AUTH_USER_KEY)
+}
+
+export function canEditLore(): boolean {
+  const user = getCurrentUser()
+  const account = ACCOUNTS.find((a) => a.user === user)
+  return account?.canEditLore ?? false
+}
+
 export function logout() {
   sessionStorage.removeItem(AUTH_KEY)
+  sessionStorage.removeItem(AUTH_USER_KEY)
 }

@@ -8,7 +8,7 @@ import {
   BookOpenText, Lightbulb, ChevronLeft, ChevronRight, Pencil, X, Check,
 } from 'lucide-react'
 import {
-  isAuthenticated, logout, loadData, saveData, resetData,
+  isAuthenticated, logout, loadData, saveData, resetData, canEditLore,
   type SiteData, type Rule, type FormEntry, type Idea, type LoreCategory,
 } from '../lib/store'
 
@@ -36,6 +36,10 @@ export function DashboardPage() {
   const [editingCategoryId, setEditingCategoryId] = useState<string | null>(null)
   const [categoryLabelDraft, setCategoryLabelDraft] = useState('')
   const [newCategoryLabel, setNewCategoryLabel] = useState('')
+  const [loreEditModeRaw, setLoreEditMode] = useState(false)
+  const canEdit = canEditLore()
+  // trava extra: mesmo que o estado interno seja mexido, só entra em modo edição quem tem permissão
+  const loreEditMode = canEdit && loreEditModeRaw
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -400,14 +404,39 @@ export function DashboardPage() {
           </div>
         )}
 
-        {/* Aba: Lore (totalmente editável) */}
+        {/* Aba: Lore (leitura por padrão; edição só para quem tem permissão) */}
         {tab === 'lore' && (
           <div className="space-y-4">
+            {/* Cabeçalho da aba com botão Editar (só aparece para quem pode editar) */}
+            <div className="flex items-center justify-between gap-4">
+              <p className="text-sm text-muted-foreground">
+                {loreEditMode ? 'Modo de edição ativado.' : 'Modo de leitura.'}
+              </p>
+              {canEdit && (
+                <Button
+                  size="sm"
+                  variant={loreEditMode ? 'default' : 'outline'}
+                  onClick={() => setLoreEditMode((v) => !v)}
+                  className="gap-2"
+                >
+                  {loreEditMode ? (
+                    <>
+                      <Check className="w-4 h-4" /> Concluir edição
+                    </>
+                  ) : (
+                    <>
+                      <Pencil className="w-4 h-4" /> Editar
+                    </>
+                  )}
+                </Button>
+              )}
+            </div>
+
             {/* Categorias */}
             <div className="flex flex-wrap items-center gap-2">
               {data.lore.map((cat) => (
                 <div key={cat.id} className="flex items-center">
-                  {editingCategoryId === cat.id ? (
+                  {loreEditMode && editingCategoryId === cat.id ? (
                     <div className="flex items-center gap-1">
                       <Input
                         autoFocus
@@ -432,54 +461,62 @@ export function DashboardPage() {
                       }`}
                     >
                       <button onClick={() => selectLoreCategory(cat.id)}>{cat.label}</button>
-                      <button
-                        onClick={() => startRenameCategory(cat.id, cat.label)}
-                        className="opacity-60 hover:opacity-100 p-0.5"
-                        aria-label="Renomear categoria"
-                      >
-                        <Pencil className="w-3 h-3" />
-                      </button>
-                      <button
-                        onClick={() => removeCategory(cat.id)}
-                        className="opacity-60 hover:opacity-100 hover:text-destructive p-0.5"
-                        aria-label="Excluir categoria"
-                      >
-                        <Trash2 className="w-3 h-3" />
-                      </button>
+                      {loreEditMode && (
+                        <>
+                          <button
+                            onClick={() => startRenameCategory(cat.id, cat.label)}
+                            className="opacity-60 hover:opacity-100 p-0.5"
+                            aria-label="Renomear categoria"
+                          >
+                            <Pencil className="w-3 h-3" />
+                          </button>
+                          <button
+                            onClick={() => removeCategory(cat.id)}
+                            className="opacity-60 hover:opacity-100 hover:text-destructive p-0.5"
+                            aria-label="Excluir categoria"
+                          >
+                            <Trash2 className="w-3 h-3" />
+                          </button>
+                        </>
+                      )}
                     </div>
                   )}
                 </div>
               ))}
 
               {/* Nova categoria */}
-              <div className="flex items-center gap-1">
-                <Input
-                  placeholder="Nova aba de lore"
-                  value={newCategoryLabel}
-                  onChange={(e) => setNewCategoryLabel(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && addCategory()}
-                  className="h-8 w-40"
-                />
-                <Button size="icon" variant="outline" className="h-8 w-8" onClick={addCategory}>
-                  <Plus className="w-4 h-4" />
-                </Button>
-              </div>
+              {loreEditMode && (
+                <div className="flex items-center gap-1">
+                  <Input
+                    placeholder="Nova aba de lore"
+                    value={newCategoryLabel}
+                    onChange={(e) => setNewCategoryLabel(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && addCategory()}
+                    className="h-8 w-40"
+                  />
+                  <Button size="icon" variant="outline" className="h-8 w-8" onClick={addCategory}>
+                    <Plus className="w-4 h-4" />
+                  </Button>
+                </div>
+              )}
             </div>
 
             {data.lore.length === 0 && (
-              <p className="text-sm text-muted-foreground">Nenhuma aba de lore criada ainda. Crie uma acima.</p>
+              <p className="text-sm text-muted-foreground">Nenhuma aba de lore criada ainda.</p>
             )}
 
             {currentLoreCategory && (
               <Card className="p-6 border border-border bg-card">
                 {/* Cabeçalho: título da página + navegação/CRUD de páginas */}
                 <div className="flex items-center justify-between mb-4 gap-4">
-                  {currentLorePage ? (
+                  {loreEditMode && currentLorePage ? (
                     <Input
                       value={currentLorePage.title}
                       onChange={(e) => updatePageTitle(currentLorePage.id, e.target.value)}
                       className="font-semibold text-lg h-9 max-w-sm"
                     />
+                  ) : currentLorePage ? (
+                    <h3 className="text-lg font-semibold text-foreground">{currentLorePage.title}</h3>
                   ) : (
                     <h3 className="text-lg font-semibold text-foreground">Sem páginas</h3>
                   )}
@@ -489,10 +526,12 @@ export function DashboardPage() {
                         Página {lorePageIndex + 1} de {currentLoreCategory.pages.length}
                       </span>
                     )}
-                    <Button size="sm" variant="outline" onClick={addPage} className="gap-2">
-                      <Plus className="w-4 h-4" /> Página
-                    </Button>
-                    {currentLorePage && (
+                    {loreEditMode && (
+                      <Button size="sm" variant="outline" onClick={addPage} className="gap-2">
+                        <Plus className="w-4 h-4" /> Página
+                      </Button>
+                    )}
+                    {loreEditMode && currentLorePage && (
                       <button
                         onClick={() => removePage(currentLorePage.id)}
                         className="text-muted-foreground hover:text-destructive p-1.5"
@@ -506,38 +545,46 @@ export function DashboardPage() {
 
                 {currentLorePage && (
                   <>
-                    {/* Parágrafos editáveis */}
+                    {/* Parágrafos: editáveis em modo edição, só leitura caso contrário */}
                     <div className="space-y-3 max-h-[55vh] overflow-y-auto pr-2">
-                      {currentLorePage.paragraphs.map((paragraph, i) => (
-                        <div key={i} className="flex items-start gap-2">
-                          <textarea
-                            value={paragraph}
-                            onChange={(e) => updateParagraph(currentLorePage.id, i, e.target.value)}
-                            rows={3}
-                            className="w-full text-sm rounded-md border border-input bg-background px-3 py-2 text-foreground leading-relaxed"
-                          />
-                          <button
-                            onClick={() => removeParagraph(currentLorePage.id, i)}
-                            className="text-muted-foreground hover:text-destructive p-1.5 flex-shrink-0"
-                            aria-label="Excluir parágrafo"
-                          >
-                            <Trash2 className="w-4 h-4" />
-                          </button>
-                        </div>
-                      ))}
+                      {currentLorePage.paragraphs.map((paragraph, i) =>
+                        loreEditMode ? (
+                          <div key={i} className="flex items-start gap-2">
+                            <textarea
+                              value={paragraph}
+                              onChange={(e) => updateParagraph(currentLorePage.id, i, e.target.value)}
+                              rows={3}
+                              className="w-full text-sm rounded-md border border-input bg-background px-3 py-2 text-foreground leading-relaxed"
+                            />
+                            <button
+                              onClick={() => removeParagraph(currentLorePage.id, i)}
+                              className="text-muted-foreground hover:text-destructive p-1.5 flex-shrink-0"
+                              aria-label="Excluir parágrafo"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          </div>
+                        ) : (
+                          <p key={i} className="text-sm text-foreground leading-relaxed text-justify">
+                            {paragraph}
+                          </p>
+                        )
+                      )}
                       {currentLorePage.paragraphs.length === 0 && (
-                        <p className="text-sm text-muted-foreground">Nenhum parágrafo. Adicione abaixo.</p>
+                        <p className="text-sm text-muted-foreground">Nenhum parágrafo.</p>
                       )}
                     </div>
 
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => addParagraph(currentLorePage.id)}
-                      className="gap-2 mt-3"
-                    >
-                      <Plus className="w-4 h-4" /> Parágrafo
-                    </Button>
+                    {loreEditMode && (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => addParagraph(currentLorePage.id)}
+                        className="gap-2 mt-3"
+                      >
+                        <Plus className="w-4 h-4" /> Parágrafo
+                      </Button>
+                    )}
 
                     {/* Paginação dentro da categoria */}
                     {currentLoreCategory.pages.length > 1 && (
