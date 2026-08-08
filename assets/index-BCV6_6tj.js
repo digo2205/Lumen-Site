@@ -22688,11 +22688,16 @@ function useSiteData() {
   return data;
 }
 const AUTH_KEY = "lumen-dashboard-auth";
-const ADMIN_USER = "admin";
-const ADMIN_PASS = "LumenSMP#123";
+const AUTH_USER_KEY = "lumen-dashboard-user";
+const ACCOUNTS = [
+  { user: "admin", pass: "LumenSMP#123", canEditLore: false },
+  { user: "Digo", pass: "Eskema19*", canEditLore: true }
+];
 function login(user, pass) {
-  if (user === ADMIN_USER && pass === ADMIN_PASS) {
+  const account = ACCOUNTS.find((a) => a.user === user && a.pass === pass);
+  if (account) {
     sessionStorage.setItem(AUTH_KEY, "1");
+    sessionStorage.setItem(AUTH_USER_KEY, account.user);
     return true;
   }
   return false;
@@ -22700,8 +22705,17 @@ function login(user, pass) {
 function isAuthenticated() {
   return sessionStorage.getItem(AUTH_KEY) === "1";
 }
+function getCurrentUser() {
+  return sessionStorage.getItem(AUTH_USER_KEY);
+}
+function canEditLore() {
+  const user = getCurrentUser();
+  const account = ACCOUNTS.find((a) => a.user === user);
+  return account?.canEditLore ?? false;
+}
 function logout() {
   sessionStorage.removeItem(AUTH_KEY);
+  sessionStorage.removeItem(AUTH_USER_KEY);
 }
 
 function RuleBlock({ rule }) {
@@ -23623,6 +23637,9 @@ function DashboardPage() {
   const [editingCategoryId, setEditingCategoryId] = reactExports.useState(null);
   const [categoryLabelDraft, setCategoryLabelDraft] = reactExports.useState("");
   const [newCategoryLabel, setNewCategoryLabel] = reactExports.useState("");
+  const [loreEditModeRaw, setLoreEditMode] = reactExports.useState(false);
+  const canEdit = canEditLore();
+  const loreEditMode = canEdit && loreEditModeRaw;
   reactExports.useEffect(() => {
     if (!isAuthenticated()) {
       navigate("/dashboard");
@@ -23921,8 +23938,27 @@ function DashboardPage() {
       ] })
     ] }) }, form.id)) }),
     tab === "lore" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: loreEditMode ? "Modo de edição ativado." : "Modo de leitura." }),
+        canEdit && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Button,
+          {
+            size: "sm",
+            variant: loreEditMode ? "default" : "outline",
+            onClick: () => setLoreEditMode((v) => !v),
+            className: "gap-2",
+            children: loreEditMode ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "w-4 h-4" }),
+              " Concluir edição"
+            ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "w-4 h-4" }),
+              " Editar"
+            ] })
+          }
+        )
+      ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap items-center gap-2", children: [
-        data.lore.map((cat) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center", children: editingCategoryId === cat.id ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+        data.lore.map((cat) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center", children: loreEditMode && editingCategoryId === cat.id ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             Input,
             {
@@ -23941,28 +23977,30 @@ function DashboardPage() {
             className: `group flex items-center gap-1 pl-3 pr-1.5 py-1.5 rounded-md text-sm font-medium border transition-colors ${cat.id === loreCategoryId ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:text-foreground"}`,
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: () => selectLoreCategory(cat.id), children: cat.label }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  onClick: () => startRenameCategory(cat.id, cat.label),
-                  className: "opacity-60 hover:opacity-100 p-0.5",
-                  "aria-label": "Renomear categoria",
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "w-3 h-3" })
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  onClick: () => removeCategory(cat.id),
-                  className: "opacity-60 hover:opacity-100 hover:text-destructive p-0.5",
-                  "aria-label": "Excluir categoria",
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-3 h-3" })
-                }
-              )
+              loreEditMode && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    onClick: () => startRenameCategory(cat.id, cat.label),
+                    className: "opacity-60 hover:opacity-100 p-0.5",
+                    "aria-label": "Renomear categoria",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "w-3 h-3" })
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    onClick: () => removeCategory(cat.id),
+                    className: "opacity-60 hover:opacity-100 hover:text-destructive p-0.5",
+                    "aria-label": "Excluir categoria",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-3 h-3" })
+                  }
+                )
+              ] })
             ]
           }
         ) }, cat.id)),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+        loreEditMode && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             Input,
             {
@@ -23976,17 +24014,17 @@ function DashboardPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { size: "icon", variant: "outline", className: "h-8 w-8", onClick: addCategory, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }) })
         ] })
       ] }),
-      data.lore.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Nenhuma aba de lore criada ainda. Crie uma acima." }),
+      data.lore.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Nenhuma aba de lore criada ainda." }),
       currentLoreCategory && /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "p-6 border border-border bg-card", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4 gap-4", children: [
-          currentLorePage ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+          loreEditMode && currentLorePage ? /* @__PURE__ */ jsxRuntimeExports.jsx(
             Input,
             {
               value: currentLorePage.title,
               onChange: (e) => updatePageTitle(currentLorePage.id, e.target.value),
               className: "font-semibold text-lg h-9 max-w-sm"
             }
-          ) : /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: "Sem páginas" }),
+          ) : currentLorePage ? /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: currentLorePage.title }) : /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-foreground", children: "Sem páginas" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-shrink-0", children: [
             currentLoreCategory.pages.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
               "Página ",
@@ -23994,11 +24032,11 @@ function DashboardPage() {
               " de ",
               currentLoreCategory.pages.length
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { size: "sm", variant: "outline", onClick: addPage, className: "gap-2", children: [
+            loreEditMode && /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { size: "sm", variant: "outline", onClick: addPage, className: "gap-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }),
               " Página"
             ] }),
-            currentLorePage && /* @__PURE__ */ jsxRuntimeExports.jsx(
+            loreEditMode && currentLorePage && /* @__PURE__ */ jsxRuntimeExports.jsx(
               "button",
               {
                 onClick: () => removePage(currentLorePage.id),
@@ -24011,29 +24049,31 @@ function DashboardPage() {
         ] }),
         currentLorePage && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3 max-h-[55vh] overflow-y-auto pr-2", children: [
-            currentLorePage.paragraphs.map((paragraph, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-2", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "textarea",
-                {
-                  value: paragraph,
-                  onChange: (e) => updateParagraph(currentLorePage.id, i, e.target.value),
-                  rows: 3,
-                  className: "w-full text-sm rounded-md border border-input bg-background px-3 py-2 text-foreground leading-relaxed"
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  onClick: () => removeParagraph(currentLorePage.id, i),
-                  className: "text-muted-foreground hover:text-destructive p-1.5 flex-shrink-0",
-                  "aria-label": "Excluir parágrafo",
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-4 h-4" })
-                }
-              )
-            ] }, i)),
-            currentLorePage.paragraphs.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Nenhum parágrafo. Adicione abaixo." })
+            currentLorePage.paragraphs.map(
+              (paragraph, i) => loreEditMode ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "textarea",
+                  {
+                    value: paragraph,
+                    onChange: (e) => updateParagraph(currentLorePage.id, i, e.target.value),
+                    rows: 3,
+                    className: "w-full text-sm rounded-md border border-input bg-background px-3 py-2 text-foreground leading-relaxed"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    onClick: () => removeParagraph(currentLorePage.id, i),
+                    className: "text-muted-foreground hover:text-destructive p-1.5 flex-shrink-0",
+                    "aria-label": "Excluir parágrafo",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-4 h-4" })
+                  }
+                )
+              ] }, i) : /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground leading-relaxed text-justify", children: paragraph }, i)
+            ),
+            currentLorePage.paragraphs.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Nenhum parágrafo." })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          loreEditMode && /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
               size: "sm",
