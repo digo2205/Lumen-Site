@@ -22690,11 +22690,25 @@ function useSiteData() {
 const AUTH_KEY = "lumen-dashboard-auth";
 const AUTH_USER_KEY = "lumen-dashboard-user";
 const ACCOUNTS = [
-  { user: "admin", pass: "LumenSMP#123", canEditLore: false },
-  { user: "Digo", pass: "Eskema19*", canEditLore: true }
+  {
+    user: "admin",
+    passHash: "c56bf3f4157bb0324268abc3c47a497b1c353f6fe24360d8851ddc8d6bab664",
+    canEditLore: false
+  },
+  {
+    user: "Digo",
+    passHash: "73934df92196fbec81ee9521dd4cbab842e900dc1107497b8312a93a500181f7",
+    canEditLore: true
+  }
 ];
-function login(user, pass) {
-  const account = ACCOUNTS.find((a) => a.user === user && a.pass === pass);
+async function sha256Hex(text) {
+  const data = new TextEncoder().encode(text);
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(digest)).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+async function login(user, pass) {
+  const hash = await sha256Hex(pass);
+  const account = ACCOUNTS.find((a) => a.user === user && a.passHash === hash);
   if (account) {
     sessionStorage.setItem(AUTH_KEY, "1");
     sessionStorage.setItem(AUTH_USER_KEY, account.user);
@@ -23589,9 +23603,9 @@ function DashboardLoginPage() {
   const [pass, setPass] = reactExports.useState("");
   const [error, setError] = reactExports.useState("");
   const navigate = useNavigate();
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    if (login(user, pass)) {
+    if (await login(user, pass)) {
       navigate("/dashboard/painel");
     } else {
       setError("Usuário ou senha incorretos.");
