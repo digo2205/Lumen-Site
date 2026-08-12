@@ -12,9 +12,9 @@ export function DashboardLoginPage() {
   const [error, setError] = useState('')
   const navigate = useNavigate()
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (login(user, pass)) {
+    if (await login(user, pass)) {
       navigate('/dashboard/painel')
     } else {
       setError('Usuário ou senha incorretos.')
